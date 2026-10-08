@@ -6,6 +6,8 @@ Os sites e o jogo incluem a revisão após meu feedback. Os dois vídeos conserv
 
 ## Abrir as entregas
 
+[Abrir a galeria no navegador](https://viktorkav.github.io/gpt-6-1-sol-semana/) para experimentar os sites e o jogo, e acessar os dois vídeos.
+
 Baixe [pecas-web.zip](https://github.com/viktorkav/gpt-6-1-sol-semana/releases/download/entregas-2026-10-08/pecas-web.zip), extraia e execute dentro da pasta extraída:
 
 ```sh
