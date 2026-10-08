@@ -1,0 +1,86 @@
+[
+  {
+    "id": "baianasystem",
+    "name": "BaianaSystem",
+    "tag": "Guitarra baiana · sound system",
+    "description": "Projeto musical criado em 2009 para explorar novas possibilidades da guitarra baiana. Sua linguagem aproxima o instrumento da cultura dos sound systems.",
+    "url": "https://baianasystem.com.br/bio/"
+  },
+  {
+    "id": "nacao-zumbi",
+    "name": "Nação Zumbi",
+    "tag": "Recife · mangue",
+    "description": "Criada no Recife no início dos anos 1990, a banda estreou com Da Lama ao Caos. Sua música cruza rock, funk, maracatu, embolada e psicodelia.",
+    "url": "https://babelproducoes.com.br/nacaozumbi/"
+  },
+  {
+    "id": "bixiga-70",
+    "name": "Bixiga 70",
+    "tag": "Afrobeat · instrumental",
+    "description": "Metais, percussão e grooves de afrobeat atravessam o repertório instrumental da Bixiga 70. Sua discografia inclui III, Quebra Cabeça e Vapor.",
+    "url": "https://www.bixiga70.com.br/musica"
+  },
+  {
+    "id": "luedji-luna",
+    "name": "Luedji Luna",
+    "tag": "Salvador · canção",
+    "description": "Nascida em Salvador, Luedji Luna assina o álbum Um Corpo no Mundo. O trabalho reúne canções como Asas, Acalanto e Banho de Folhas.",
+    "url": "https://luedjiluna.bandcamp.com/album/um-corpo-no-mundo"
+  },
+  {
+    "id": "boogarins",
+    "name": "Boogarins",
+    "tag": "Goiânia · rock",
+    "description": "Banda de rock de Goiânia, Boogarins tem no catálogo As Plantas Que Curam, Manual e Sombrou Dúvida.",
+    "url": "https://boogarins.bandcamp.com/music"
+  },
+  {
+    "id": "duda-beat",
+    "name": "Duda Beat",
+    "tag": "Pop · canção",
+    "description": "Duda Beat trabalha o pop em canções como Nossa Chance e Preparada. Seu catálogo inclui o EP Esse Delírio e o projeto audiovisual Acústico & Tal.",
+    "url": "https://www.universalmusic.com.br/artista/duda-beat/"
+  },
+  {
+    "id": "terno-rei",
+    "name": "Terno Rei",
+    "tag": "Violeta · Gêmeos",
+    "description": "O catálogo do Terno Rei reúne os álbuns Vigília, Essa Noite Bateu Com um Sonho, Violeta e Gêmeos, lançados pela Balaclava Records.",
+    "url": "https://www.lojabalaclava.com.br/terno-rei-ct-32c6d6"
+  },
+  {
+    "id": "liniker",
+    "name": "Liniker",
+    "tag": "Caju · Indigo Borboleta Anil",
+    "description": "Liniker apresenta os universos de Caju e Indigo Borboleta Anil em seu catálogo oficial. Caju também ganha um projeto visual publicado no canal da artista.",
+    "url": "https://linktr.ee/linikeroficial"
+  },
+  {
+    "id": "ceu",
+    "name": "Céu",
+    "tag": "São Paulo · canção e eletrônica",
+    "description": "Cantora e compositora de São Paulo, Céu cruza samba, reggae, soul e pop. Em Tropix, sua música explora uma atmosfera sintética voltada à pista.",
+    "url": "https://www.sixdegreesrecords.com/ceu/"
+  },
+  {
+    "id": "o-terno",
+    "name": "O Terno",
+    "tag": "São Paulo · rock e pop",
+    "description": "Trio de São Paulo que aproxima rock, pop e experimentação. Seu catálogo inclui O Terno, Melhor Do Que Parece e <atrás/além>.",
+    "url": "https://oterno.bandcamp.com/music"
+  },
+  {
+    "id": "tulipa-ruiz",
+    "name": "Tulipa Ruiz",
+    "tag": "Canção · Habilidades Extraordinárias",
+    "description": "Cantora e compositora brasileira, Tulipa Ruiz tem na discografia Efêmera, Tudo Tanto e Dancê. Habilidades Extraordinárias amplia esse repertório autoral.",
+    "url": "https://www.tuliparuiz.com.br/"
+  },
+  {
+    "id": "marina-sena",
+    "name": "Marina Sena",
+    "tag": "Minas Gerais · pop e MPB",
+    "description": "Cantora e compositora de Taiobeiras, em Minas Gerais, Marina Sena combina MPB, pop e influências regionais. Por Supuesto está entre as canções que marcaram sua trajetória solo.",
+    "url": "https://www.sonymusic.com.br/artistas/marina-sena/"
+  }
+]

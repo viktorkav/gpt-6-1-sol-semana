@@ -1,0 +1,1293 @@
+{
+  "created_utc": "2026-10-08T09:41:54.283651+00:00",
+  "scope": "7 pieces: 4 revised websites,1 revised game,2 initial editorial video deliveries",
+  "requested_execution": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "ultra",
+    "service_tier": "priority",
+    "backend_identity_receipt": false
+  },
+  "source_files": [
+    {
+      "path": ".gitignore",
+      "bytes": 189,
+      "sha256": "f27f3d94d2b37c62c904699d5f7d0a4bb05cdc5e17d8b69511e62b8eaebf7465"
+    },
+    {
+      "path": "ADAPTACOES-DE-EMPACOTAMENTO.md",
+      "bytes": 2426,
+      "sha256": "0b2e19fa44f1eaaf62bcce7d4cb85b348f257cd3881e93c2da5478a5feaf3138"
+    },
+    {
+      "path": "DIREITOS-E-FONTES.md",
+      "bytes": 2488,
+      "sha256": "0eaed66ca2d3f4dcb8b5ce295f81b53b6549d65e536ceefeec84ae0d3cd5be39"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4264,
+      "sha256": "9dad293ab47d9f2e111f9d64fdfa0c32b07dec173e04641bdc4779897ebbadcc"
+    },
+    {
+      "path": "pecas/festival/.gitignore",
+      "bytes": 53,
+      "sha256": "7a63a26d218df47b6792c8ec84c1869234c7d44a474c58e62b618e26571b371c"
+    },
+    {
+      "path": "pecas/festival/DIREITOS-E-ORIGENS.md",
+      "bytes": 5682,
+      "sha256": "6ce2176f3969b7a678dc6b8c870561e29de4e8464a5c9cc317eb4d553e7899f7"
+    },
+    {
+      "path": "pecas/festival/README.md",
+      "bytes": 1137,
+      "sha256": "5e806f04b27285ef0db944726e55951f624e054bc92dff218dbf49f60da2bef9"
+    },
+    {
+      "path": "pecas/festival/index.html",
+      "bytes": 674,
+      "sha256": "a9d843f0fb77055a05e8d3e750690eec7f8e1a53bc2f7f1652655e146d6b6ff8"
+    },
+    {
+      "path": "pecas/festival/package-lock.json",
+      "bytes": 30897,
+      "sha256": "30587084f89f961476166f2bfe0cf087bee074c5d0bf187f919d61c4b3013cab"
+    },
+    {
+      "path": "pecas/festival/package.json",
+      "bytes": 588,
+      "sha256": "380a9e13ddfe02ca086fade45c8cadcda9ba996cbc6523ac53f9b74af7b2e7b8"
+    },
+    {
+      "path": "pecas/festival/public/favicon.svg",
+      "bytes": 316,
+      "sha256": "7157e9f10c2b89154022162f422de987a14ec30446f760959334437872c60051"
+    },
+    {
+      "path": "pecas/festival/public/fonts/BarlowCondensed-Black.ttf",
+      "bytes": 110828,
+      "sha256": "e74b750df582c608f35db467b711b2b60d2217618e85e60b72b42dfd00446cab"
+    },
+    {
+      "path": "pecas/festival/public/fonts/BarlowCondensed-OFL.txt",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "path": "pecas/festival/public/fonts/SpaceGrotesk-OFL.txt",
+      "bytes": 4495,
+      "sha256": "564ce565c371c5e5bbf286006565a7c9aa55a9f56e7ca58d56e05d649dd61a72"
+    },
+    {
+      "path": "pecas/festival/public/fonts/SpaceGrotesk.ttf",
+      "bytes": 136676,
+      "sha256": "acad6de1fc93436f5c0f1f4137751ef04f1aea3063e7036535970ffcfbd79f72"
+    },
+    {
+      "path": "pecas/festival/public/key-visual.svg",
+      "bytes": 81641,
+      "sha256": "cfe66679ea1abfd726e66d3fc2f9ee84eea35e088ed9fc4261e94ea21aedfdcf"
+    },
+    {
+      "path": "pecas/festival/public/photos/baianasystem.jpg",
+      "bytes": 257884,
+      "sha256": "40cfeb5c3058d4b778221eb921fef0f8276d95888d258904cd33128394f6ef54"
+    },
+    {
+      "path": "pecas/festival/public/photos/bixiga-70.jpg",
+      "bytes": 492727,
+      "sha256": "e6896867e28f74111f76632a08ed61446841074e80d60dc0d18d46f0f7d4951b"
+    },
+    {
+      "path": "pecas/festival/public/photos/boogarins.jpg",
+      "bytes": 591385,
+      "sha256": "fc8f17ff7e54f66ef6ce2b9802acd603f18a795dbc7f7b041887264bcdfd2d74"
+    },
+    {
+      "path": "pecas/festival/public/photos/ceu.jpg",
+      "bytes": 1087749,
+      "sha256": "fa91faa4f689ebd51cc5b6794086ac1f229b1d348918ad8dc172dfe6bbd198ba"
+    },
+    {
+      "path": "pecas/festival/public/photos/duda-beat.jpg",
+      "bytes": 142780,
+      "sha256": "81f50885c45403514ab74ac8639e3142cfd8f1ca7f826fad9f74716f14dfee5c"
+    },
+    {
+      "path": "pecas/festival/public/photos/liniker.jpg",
+      "bytes": 310680,
+      "sha256": "743ddc942d231ceefb8e934d6f33d5ea63be7dca0f450ac8c577c8373c5662e3"
+    },
+    {
+      "path": "pecas/festival/public/photos/luedji-luna.jpg",
+      "bytes": 507495,
+      "sha256": "338fb1fbe0a168555a7d2f3622eea7f4824764b039eb0645e8c0d6109d0db346"
+    },
+    {
+      "path": "pecas/festival/public/photos/marina-sena.jpg",
+      "bytes": 138186,
+      "sha256": "b606d1800991f242276472108a0bba092194179b1380ffec0c72e36159b625f0"
+    },
+    {
+      "path": "pecas/festival/public/photos/nacao-zumbi.jpg",
+      "bytes": 246715,
+      "sha256": "be1a6d592e5987f6be1fc887166609fe0fc512217015acb583b5e2d5117ba036"
+    },
+    {
+      "path": "pecas/festival/public/photos/o-terno.jpg",
+      "bytes": 50170,
+      "sha256": "ee37abcb6fb230f5519674fa21d594ec8e1f4274b4f5df88426cc173a22be6f1"
+    },
+    {
+      "path": "pecas/festival/public/photos/terno-rei.jpg",
+      "bytes": 608703,
+      "sha256": "baf3b722b43beb7df88acccd20b118a45ef54c21793bf14cfc26b5b9c85a1693"
+    },
+    {
+      "path": "pecas/festival/public/photos/tulipa-ruiz.jpg",
+      "bytes": 1248082,
+      "sha256": "a8658ec1816bf6853961252140e88e781a3c6e550c3eace72d59ce29c023aaa2"
+    },
+    {
+      "path": "pecas/festival/public/referencias.html",
+      "bytes": 25172,
+      "sha256": "2882b34eda85a484d759ebcbf0fa9651ecfdaaf8b570bd4fc886af36418747ea"
+    },
+    {
+      "path": "pecas/festival/src/App.jsx",
+      "bytes": 31681,
+      "sha256": "cfdf9e32afa772188e90cbbbbac0e8c099fc5c0929ed9570db5fd3a3df193701"
+    },
+    {
+      "path": "pecas/festival/src/ArtistImage.jsx",
+      "bytes": 903,
+      "sha256": "78619b196f03f77cf2f309390dab0601834dac3efe45330b6bb4b2698139f3dc"
+    },
+    {
+      "path": "pecas/festival/src/FestivalHero.jsx",
+      "bytes": 4377,
+      "sha256": "ea7e04ff9208fb638c26ea9860bb403da76c44a0e435d1b71bafad4db8823499"
+    },
+    {
+      "path": "pecas/festival/src/KeyVisual.jsx",
+      "bytes": 1252,
+      "sha256": "d43bc7d85a7295cfc86128d9adfb25ad4f0ffee63e3fb0de8ea9b97d304f4742"
+    },
+    {
+      "path": "pecas/festival/src/data/artists.json",
+      "bytes": 3825,
+      "sha256": "59a0502bd0a3809d474bbc524803ae5598132590e6fd6dd25c04c00036abe5b1"
+    },
+    {
+      "path": "pecas/festival/src/data/photos.json",
+      "bytes": 5694,
+      "sha256": "3943b29c02513c5eb64812a3833de5484f137185b9c823f405641bdcccf8ff8f"
+    },
+    {
+      "path": "pecas/festival/src/data/program.js",
+      "bytes": 2648,
+      "sha256": "066a57fb7758432a5898aac584ddaf0d1368e716b558a3452b587d96360b1d6c"
+    },
+    {
+      "path": "pecas/festival/src/lib/agenda.js",
+      "bytes": 4024,
+      "sha256": "0657cf9666df134b3964b364364438de830fd9c6dcde2ec2311cf5383f0c65c0"
+    },
+    {
+      "path": "pecas/festival/src/main.jsx",
+      "bytes": 262,
+      "sha256": "8a8edf26df5116eec825f7b38776a19bae3e0421ac003a5c756a05794411cbdd"
+    },
+    {
+      "path": "pecas/festival/src/revision.css",
+      "bytes": 17992,
+      "sha256": "d3afc10bcda199df2cc4e234a6742f64bf70fc9da0a3b028c251e0981c5cf5b6"
+    },
+    {
+      "path": "pecas/festival/src/styles.css",
+      "bytes": 38283,
+      "sha256": "d16e7c21528778a79ad7c094c70958668ff431b2648ce746604222747949f0d9"
+    },
+    {
+      "path": "pecas/festival/vite.config.js",
+      "bytes": 144,
+      "sha256": "e1d6ae30f0e1199e59e6f2f9311c53288f91c208a14ad7e5a499363f9c52e85a"
+    },
+    {
+      "path": "pecas/home-viktorkav/.gitignore",
+      "bytes": 53,
+      "sha256": "7a63a26d218df47b6792c8ec84c1869234c7d44a474c58e62b618e26571b371c"
+    },
+    {
+      "path": "pecas/home-viktorkav/DIREITOS-E-ORIGENS.md",
+      "bytes": 962,
+      "sha256": "af4a5bebd331533ad5aa52ee98d5c2fa993d61ca4af42b77bbfb0ad0f960f3e1"
+    },
+    {
+      "path": "pecas/home-viktorkav/README.md",
+      "bytes": 1187,
+      "sha256": "929f8053d68e901dcc6bfb04dd3044282e7b5176da5279a2b503f8cde1020580"
+    },
+    {
+      "path": "pecas/home-viktorkav/asset-manifest.json",
+      "bytes": 497,
+      "sha256": "94536d1ba872961eda5813822ef07a9e0d8677afac3e126788ce24a647fa20e3"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/escultura.js",
+      "bytes": 4531,
+      "sha256": "7dc1fdf52a572684f1852e99a2d3403a1a399c10c153694befe7fc532df449d0"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/fontes/fraunces-vf.woff2",
+      "bytes": 67388,
+      "sha256": "48282a415ec22e31beaf0a0666e6fae0c8cbddcd0b1f6e729f27c3ade8a64e43"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/fontes/ibm-plex-sans-vf.woff2",
+      "bytes": 40240,
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/fontes/jetbrains-mono-vf.woff2",
+      "bytes": 40480,
+      "sha256": "1e06740a02a443fb7f3eeda8fcaa685a0f6c620e3f01e6666e847295469ce3ad"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/grafismos/orbita.svg",
+      "bytes": 169407,
+      "sha256": "1e598b3d649f55daa1c237c64eadb94e27cf68ab692ca2d6aeffdb886abb5219"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/marca/vk-tinta-clara.svg",
+      "bytes": 16851,
+      "sha256": "ed974767af61f0f82f1c976118d71823f2c1536cff5790920859f611727eb049"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/assets/marca/vk.svg",
+      "bytes": 16856,
+      "sha256": "a0eda488d7734033b11a44d27287afb91d447606820126e360b7e6f825540487"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/bancada.css",
+      "bytes": 4047,
+      "sha256": "42e4e1721988a9e11447a4bbf26d08851640db921e0600a7cb718e08b0647a12"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/tokens/bancada.css",
+      "bytes": 2290,
+      "sha256": "db992eeb2968fe05a0cf4ce3b3d2008d1c912a3729774e200063231475901352"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/design-system/tokens.css",
+      "bytes": 29368,
+      "sha256": "86ce09af7b393e244a675469df2df20a8fcd746a71bbbef112a93709e9f9a532"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/favicon.png",
+      "bytes": 801,
+      "sha256": "6bf4f1b9c75270782e357710e4581fd979f168f509de6c9cf95ca44f75c4ad3b"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/github-studio-600.webp",
+      "bytes": 43942,
+      "sha256": "d0122cf9addde357e6d6a5a351f6a03e1095700cc6464b37d74f35b0a0c599de"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/github-studio.webp",
+      "bytes": 110128,
+      "sha256": "a84599790337e955405d2a0deb69212b28faf2c5e1894026e37c8b47ff21eb2b"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/kavmonitor-studio-600.webp",
+      "bytes": 40972,
+      "sha256": "a0b1f7df4a6f5751e91ad3ea338981d843a6d6ca33d51b80cd6a0f0926e312b4"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/kavmonitor-studio.webp",
+      "bytes": 101144,
+      "sha256": "0a8adf23fa715131e40437d17ec62976b219864678d85685984083b5858c7f04"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/tutoriais-studio-600.webp",
+      "bytes": 38782,
+      "sha256": "754164202540b5fde430558933231c824210a6039e6c929bae40cb2feef2a782"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/tutoriais-studio.webp",
+      "bytes": 94288,
+      "sha256": "91f32c149e615db6c55d4688741c279cd1040dfb73a348d69df6edc40998c8be"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/vkpromos-studio-600.webp",
+      "bytes": 41920,
+      "sha256": "da724b4e71910848f6d972ef9d5fbe7b50b4042eaf0c67d0ad84526148164824"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/vkpromos-studio.webp",
+      "bytes": 104616,
+      "sha256": "d3b0b79ad7e818eb63b17296a3ff1e971151cba5f41bf09eadcb29c02fb522b2"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/fichas/vkpromos.webp",
+      "bytes": 42252,
+      "sha256": "d7908a868efd456ae16730db38fb7b3925ce96afd15aaadb161c876aa4c3d00b"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/licenses/ibm-plex-sans-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/licenses/jetbrains-mono-OFL.txt",
+      "bytes": 4399,
+      "sha256": "a76abf002c49097d146e86740a3105a5d00450b1592e820a1109a8c5680cd697"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/pixel/vk-tutorial-nextcloud.png",
+      "bytes": 8344,
+      "sha256": "0a1f4e2b6ad4437c7045563b09d3fdbd27f92a013ef80e7f0d227a224e887dd7"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/pixel/vk-tutorial-obsidian-claude-code.png",
+      "bytes": 14530,
+      "sha256": "4b9e683e2bedf387a2be9a3eb38baee5ec9861a7a5b6fabf0cdb7aee834b92a9"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/pixel/vk-tutorial-tailscale.png",
+      "bytes": 10552,
+      "sha256": "543f9bcd43371a57156df27a7a4d28ea3397483a3a54eb22c704f1491d9830ff"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/pixel/vk-tutorial-whisper.png",
+      "bytes": 6003,
+      "sha256": "6e69b2b094058d2e17c02aa50d945cb7a4f9e880b690354e726ec17d6d94b044"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/retratos/vk-recorte-1000.webp",
+      "bytes": 48758,
+      "sha256": "9a32ca1b9ded6b6f4845818db3b69c20de53476699de9ef9dba534e87c12cb11"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/retratos/vk-recorte-1400.webp",
+      "bytes": 94896,
+      "sha256": "b54e2564639207f4e7b9d5d6f3314ef0541a07ab5b86b008d899e7979b2d3b95"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/retratos/vk-recorte-700.webp",
+      "bytes": 25758,
+      "sha256": "7a1bf6d572460323be7337d862e8df3fc45269d8e00795af72fa5486f27cf443"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-mobile-1280.webp",
+      "bytes": 246802,
+      "sha256": "b2d36db399d63e082609971631ef9d13e680ea258b5ac52472d30e8bc7fc580a"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-mobile-384.webp",
+      "bytes": 28278,
+      "sha256": "c887b40cf09d341179069347146fb10cb93f871438f89bf735ddd0ad84ce8233"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-mobile-768.webp",
+      "bytes": 101844,
+      "sha256": "c4bfe9d944e4cc81d6dfa661dba18729a2aad5aa34f4743159f4d86b614e077f"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-mobile.png",
+      "bytes": 6415390,
+      "sha256": "16bdbbd5c0efeb0ab6e91c60b2763656190f1b58e75c76fc4af6e14eae2ddadd"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-mobile.webp",
+      "bytes": 595526,
+      "sha256": "d5ed8600c0b5d9716ab42a68637f74c66b4f4899740446be03a71aa1b9d671dc"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-panorama-1280.webp",
+      "bytes": 150272,
+      "sha256": "e2d9a5739951a1f0f7e1374651b334615d3ce7ead3325515a3c826095acad62d"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-panorama-768.webp",
+      "bytes": 61314,
+      "sha256": "f66817508990ed6844bd4a7f1bacd1b34bd1f1a2802f358463c2ee93b3e60ffd"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-panorama.png",
+      "bytes": 3739598,
+      "sha256": "cef3a49d18312bc97e8ba4b7a48312016d0ecaac9873d2e29af96563b286f14a"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/home-investigacao-panorama.webp",
+      "bytes": 351416,
+      "sha256": "dfbf5d4b0981cafba4f352ff64b161dd7a64f9a192d8564f18c98a2664d81300"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/01z8l4Qbdx0-640.webp",
+      "bytes": 45020,
+      "sha256": "baf3c5af507b61658f7296ecc08d6d5dd8873c921cd2425cbcbc318f51fa96eb"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/01z8l4Qbdx0.jpg",
+      "bytes": 206227,
+      "sha256": "1adf3b50b603257e9a6b62368b9e5cb774cebf0c2626231435a6aacbfda52b20"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/01z8l4Qbdx0.webp",
+      "bytes": 132998,
+      "sha256": "96225c7407faaf8cf12fbdf5b60ced02493e969458e9deef2c1869863c158f46"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/4LSVJF0rNK8.jpg",
+      "bytes": 190580,
+      "sha256": "9c960aa78fe7a027b24b534ce1b76ffd2e49fd579f034ad280a0826bc9eb9d1b"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/BIaETAJLakA-640.webp",
+      "bytes": 55782,
+      "sha256": "0f108a12ab4a1653c88b29d8e5a24cacafe5debd14c786a3c6cf1da470a59c71"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/BIaETAJLakA.jpg",
+      "bytes": 246108,
+      "sha256": "07a8fc77a6c0a6df09ac3449b1b77625597841476edd42a5a24d0a44e8749915"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/BIaETAJLakA.webp",
+      "bytes": 163996,
+      "sha256": "7aee15264040a859cd7046246d5995e922d44733004420fc9f378eeab4baa75c"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/OlIQclp5QEg.jpg",
+      "bytes": 194843,
+      "sha256": "ff30678f19f0ed41ab448864193f30b63bf0cc572796f89fb1cc53fd34f4af96"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/RZNmluFIgK0-640.webp",
+      "bytes": 43380,
+      "sha256": "ebb0caad0e31c8874cf0c00cb5ae90056d57036621fd64a8220d0be8eda07341"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/RZNmluFIgK0.jpg",
+      "bytes": 196506,
+      "sha256": "3d3d2c9308ccd53847216ffee9683d6d4f3c748c5d2ae9fded945604a0979423"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/RZNmluFIgK0.webp",
+      "bytes": 120020,
+      "sha256": "3623e482238f150c16bce1e40581a65f67c4c6c19c90bcb420b6eb204dceda4e"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/Y25lryXxqlY-640.webp",
+      "bytes": 39126,
+      "sha256": "b2a9460217d27ed256d06fd49c0d2387b3f630cb23c267072701f37c55c8fcca"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/Y25lryXxqlY.jpg",
+      "bytes": 195251,
+      "sha256": "f161c35c7a61e9b250308c6814cf8686f80d4a93ad37c9f6ed7a4072c3570965"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/Y25lryXxqlY.webp",
+      "bytes": 123692,
+      "sha256": "dadcf7f973584845edc4962f86e449c0c40473dc5f51cad6b5bf4ed624fef250"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/YyD1F1O-nAY-640.webp",
+      "bytes": 54518,
+      "sha256": "4ada1256f57ea85f975e0f2a58b6b20c39a0f077345eec59b49be5f416b8ea2a"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/YyD1F1O-nAY.jpg",
+      "bytes": 239216,
+      "sha256": "f36a5edacf2845926bea5e722f0a7a045b25b395d1ce511a72373a26e4ca154f"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/YyD1F1O-nAY.webp",
+      "bytes": 169672,
+      "sha256": "2b809a23a8538576d0c33dcfa6be90a5670e7b4b55cba026633a2a1e574bfba7"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/c5vXh2HeOiM-640.webp",
+      "bytes": 39634,
+      "sha256": "c9f6761694cd178e3a255bcd1df7d3509b3d9e072ce871062585a57b843de89d"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/c5vXh2HeOiM.jpg",
+      "bytes": 185999,
+      "sha256": "8ea8da58a859a4838b6f76559bd19364764abccf73e4201b0cb8a1cd6ef28dea"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/videos/c5vXh2HeOiM.webp",
+      "bytes": 112890,
+      "sha256": "ffc73406efcf1978507c69a12c4ce90a04f23af00948fe121da304b69dba98e9"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/revisao-1/vk-retrato-700.webp",
+      "bytes": 34628,
+      "sha256": "4debb5966a6f5b980bc65c96e6972dd3ce26f923ab6a8dabc662103afc909652"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/01z8l4Qbdx0.jpg",
+      "bytes": 21189,
+      "sha256": "42cf1d9606a81add735fd394f7fb6569c93af96234b286d089ec704bb7705244"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/4LSVJF0rNK8.jpg",
+      "bytes": 19158,
+      "sha256": "9fd458164973769a27151f7f6e43863e4b5f9483ce6ff14d64f855b0a0da3963"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/BIaETAJLakA.jpg",
+      "bytes": 23056,
+      "sha256": "4d24ef3eac6c82f93335b4976a290a90fda798e3f09174e93e1942c37daa49bf"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/OlIQclp5QEg.jpg",
+      "bytes": 21060,
+      "sha256": "eae030c81cf5a9c4534b1898b953204c6c488d40178a8672f7e0990d176968e4"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/RZNmluFIgK0.jpg",
+      "bytes": 19824,
+      "sha256": "d610c3abe1d9f6890512bf240e2616d617de7968667443acbcb187c203d38829"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/Y25lryXxqlY.jpg",
+      "bytes": 18181,
+      "sha256": "8c69ee97d8972ae90da0b071bb472f5be1119207e7e9eca7b051cd2b4ddf281d"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/YyD1F1O-nAY.jpg",
+      "bytes": 21337,
+      "sha256": "a3fd30626f2a8ad02a0ec777edac7ee474a998c56a4deb3c88022c692499dbdf"
+    },
+    {
+      "path": "pecas/home-viktorkav/assets/videos/c5vXh2HeOiM.jpg",
+      "bytes": 19002,
+      "sha256": "1ed860579e4d36ce4156ba4f724ee29c18b2c3fe248be65f11582021a9ab0777"
+    },
+    {
+      "path": "pecas/home-viktorkav/data/catalog.json",
+      "bytes": 92984,
+      "sha256": "3dc1a1c69087b686c10256629807a69238f32cd3d57969abd0b7973c2c59cff2"
+    },
+    {
+      "path": "pecas/home-viktorkav/index.html",
+      "bytes": 187877,
+      "sha256": "578b97b7ad70f9a443f096459508e997038f0571f6a1e216a8b045a4761262d7"
+    },
+    {
+      "path": "pecas/home-viktorkav/package-lock.json",
+      "bytes": 75153,
+      "sha256": "f93cb2c3f379c81ee7be127af10392d8769aac2a2e5b7255d73eaa22c953a8ae"
+    },
+    {
+      "path": "pecas/home-viktorkav/package.json",
+      "bytes": 433,
+      "sha256": "efa0ad27c5a2ee9c99b2263867bc5f35f6b4da6b3f1758a3cf27443355fce675"
+    },
+    {
+      "path": "pecas/home-viktorkav/scripts/build.mjs",
+      "bytes": 8574,
+      "sha256": "9b78455528fe77dcfffdac6243c716bacaae4d4d8b72a7542617a1a853bc8013"
+    },
+    {
+      "path": "pecas/home-viktorkav/scripts/serve.mjs",
+      "bytes": 1814,
+      "sha256": "50eeac2dc5655d3071cf4cf5c4ede8638df3529d2170668e1294828ca0cc16e0"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/app.mjs",
+      "bytes": 7275,
+      "sha256": "236493819e19f95a0a3f8673b3298b4ce84deac4028b8f0054dbc6e2ae9160b1"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/index.template.html",
+      "bytes": 13038,
+      "sha256": "0a959dbf6ee71b4b174541029782063e151bb9035ea03f676dd43e00207a1185"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/search.mjs",
+      "bytes": 588,
+      "sha256": "602f125dcdb350c0c04c93b1c155a9f45abbaba40ccc365255b64437f3697981"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/site.generated.css",
+      "bytes": 30516,
+      "sha256": "284f104c6005953fea9177078462fbb9401db3da68b712f19eec8ff72c9bb44b"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/styles.css",
+      "bytes": 24081,
+      "sha256": "999aeaec61823b2c53a40e823f626b517ba8946aadf5df8ccbbee5f22d184d0f"
+    },
+    {
+      "path": "pecas/home-viktorkav/src/trails.mjs",
+      "bytes": 1602,
+      "sha256": "17a4c1673f8606e3f9506846c1b69781e18c1c8aaf27f34f6c72c2765758595a"
+    },
+    {
+      "path": "pecas/horizontal/README.md",
+      "bytes": 1336,
+      "sha256": "f7883a9bd7b5d2c3e95512bb8887cc6b9b01b632ec9c5584b26c107d53f5bb61"
+    },
+    {
+      "path": "pecas/horizontal/poster.jpg",
+      "bytes": 129175,
+      "sha256": "700f8356d65aa5bb5a072b1b7fae1ccf0ac4b0945b266cf8b190581624b47e09"
+    },
+    {
+      "path": "pecas/modelo-fronteira/.gitignore",
+      "bytes": 53,
+      "sha256": "7a63a26d218df47b6792c8ec84c1869234c7d44a474c58e62b618e26571b371c"
+    },
+    {
+      "path": "pecas/modelo-fronteira/DIREITOS-E-ORIGENS.md",
+      "bytes": 962,
+      "sha256": "af4a5bebd331533ad5aa52ee98d5c2fa993d61ca4af42b77bbfb0ad0f960f3e1"
+    },
+    {
+      "path": "pecas/modelo-fronteira/README.md",
+      "bytes": 1241,
+      "sha256": "b150cdb64906dc13e240257312794351e0aff2622f83e2df9d4c388486f37ddc"
+    },
+    {
+      "path": "pecas/modelo-fronteira/index.html",
+      "bytes": 609,
+      "sha256": "f8b9913b10eaaa3a7d69d65f0e45fd28e74bb7b7da57ef8bccf118837d8c6451"
+    },
+    {
+      "path": "pecas/modelo-fronteira/package-lock.json",
+      "bytes": 85662,
+      "sha256": "1dc35d89c261c6b7de253ab1bded54048eecf925c8d6c3f563b40b300eb3ae7c"
+    },
+    {
+      "path": "pecas/modelo-fronteira/package.json",
+      "bytes": 832,
+      "sha256": "0730c107c951a3ba431143de84305c59db1948e6b5ae30c0c0e834273d35f39e"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/assets/manifold-mobile.webp",
+      "bytes": 44812,
+      "sha256": "18702a752c3e921101604f8aa3e1112ce42ac338dfe03a5ffedc1991bcd915db"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/assets/manifold-original.png",
+      "bytes": 2312464,
+      "sha256": "d3c46695b738c7554f309f5fe20169e93389b35337934b189ecddaa9286841ce"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/assets/manifold.webp",
+      "bytes": 166898,
+      "sha256": "e1c0bfb03ed263be43b0c6f9f03870a5963d9cea1be633805eaba2a340f20a69"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/assets/mark.svg",
+      "bytes": 214,
+      "sha256": "9ef158ec2b38daad284e769d4499d4126220f25475c0cef2f78e8b93c58ba929"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/benchmarks.js",
+      "bytes": 10254,
+      "sha256": "56e277bf02d79ec761efc10f7627427345fdf8e0c3274511b281228b0da849a8"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/docs.css",
+      "bytes": 4200,
+      "sha256": "0ab3e59217ec3e11652210f95fa1ef1383adf156ab3ed220011ba4237ad293aa"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/engine.js",
+      "bytes": 6827,
+      "sha256": "9d9197ddf6341dc9c58ea1dfb6d3f056e3f79b8e0a9af33bc317c18ed8a85818"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/exemplo.js",
+      "bytes": 802,
+      "sha256": "152a1c38dd44f2bcb9a671b0955493c353665c5ec08f71c51aeae07e7df9d96d"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/fonts/ibm-plex-mono-LICENSE.txt",
+      "bytes": 5299,
+      "sha256": "23b0a9d0c6d3f140a0b77e483c5cfa6bba574325ef5cb189ed9f2fec4884533f"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/fonts/ibm-plex-mono.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/fonts/space-grotesk-LICENSE.txt",
+      "bytes": 4401,
+      "sha256": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/fonts/space-grotesk.woff2",
+      "bytes": 13388,
+      "sha256": "65fd17fcbd2e2f522940b5f67ead3d23329e02891aa5495e74d11a499c0b0673"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/docs/index.html",
+      "bytes": 12305,
+      "sha256": "26959085a3a56af25c61dac777289401f2eb968605ce4724d760bd3f7bb1f3f9"
+    },
+    {
+      "path": "pecas/modelo-fronteira/public/robots.txt",
+      "bytes": 23,
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
+    },
+    {
+      "path": "pecas/modelo-fronteira/scripts/sync-engine.mjs",
+      "bytes": 371,
+      "sha256": "90ad8749454b298e4be46b439596d833f79364aa5fa900548233cc3d0235d03f"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/Laboratory.jsx",
+      "bytes": 21872,
+      "sha256": "93a539cee07009eade29337ed729f7f5356368dff8058f400b0ffcf640ccd635"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/benchmarks.js",
+      "bytes": 10254,
+      "sha256": "56e277bf02d79ec761efc10f7627427345fdf8e0c3274511b281228b0da849a8"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/engine.js",
+      "bytes": 6827,
+      "sha256": "9d9197ddf6341dc9c58ea1dfb6d3f056e3f79b8e0a9af33bc317c18ed8a85818"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/laboratory.css",
+      "bytes": 25090,
+      "sha256": "2a268c2b3f41a5f847507c0a84be5eb44df7c9fefc289c93c1b66767b3674e2b"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/main.jsx",
+      "bytes": 17438,
+      "sha256": "6ba7cf205190ca961c3b5aa4f3aa33813b97f538efb9e0f73494a70aa4691852"
+    },
+    {
+      "path": "pecas/modelo-fronteira/src/style.css",
+      "bytes": 31894,
+      "sha256": "9504da69bcde6dc34f2e25edbb9b55c9aa2cec0677d27d686c6e82869ade2507"
+    },
+    {
+      "path": "pecas/modelo-fronteira/vite.config.js",
+      "bytes": 144,
+      "sha256": "4ebe818953bbeb45b4a7da57fbe0208307d4de01b5bbd7c77b06d31bf711bcd9"
+    },
+    {
+      "path": "pecas/roguelike-tatico/.gitignore",
+      "bytes": 53,
+      "sha256": "7a63a26d218df47b6792c8ec84c1869234c7d44a474c58e62b618e26571b371c"
+    },
+    {
+      "path": "pecas/roguelike-tatico/DIREITOS-E-ORIGENS.md",
+      "bytes": 962,
+      "sha256": "af4a5bebd331533ad5aa52ee98d5c2fa993d61ca4af42b77bbfb0ad0f960f3e1"
+    },
+    {
+      "path": "pecas/roguelike-tatico/README.md",
+      "bytes": 1518,
+      "sha256": "2be326678dc92907f2e11e890fdd1b4fd70979005c122cf8e5130662ce7a0655"
+    },
+    {
+      "path": "pecas/roguelike-tatico/art.js",
+      "bytes": 5641,
+      "sha256": "2a44b793ca619430b6e4f9e2d5b57cb4623fce114ec9b793ce1b837ecb21c290"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/fundo-cais.webp",
+      "bytes": 235872,
+      "sha256": "4df94bc20dd37488c9acdceb968aea00f831664c0dc81c47dbfa1942674bcc7f"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/fundo-escadaria.webp",
+      "bytes": 246274,
+      "sha256": "0a0fd8f9a8d9847389c1dd81ee609beb5f9be20214c481894dd89c10d97c3a9f"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/fundo-jardim.webp",
+      "bytes": 247002,
+      "sha256": "74cdbfc4fdbb7e460b465de911611cae8d82ae245b991dd5069de2048431fcfb"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/manifest.json",
+      "bytes": 15556,
+      "sha256": "0762a0eb14a2b04a800878098ee061a3360cb1c1b1b5868f1bd08dce9f37717b"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/portraits/healer.webp",
+      "bytes": 62608,
+      "sha256": "29a2d58d3655bc682f38095a2263463ab5ad08d8b8a51e46802cf43ba5527a16"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/portraits/ranger.webp",
+      "bytes": 56774,
+      "sha256": "bb40503c7befc03a9c8b5d249fc47b1a83adbee0c8b1bf3c87b63a1d99383d65"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/portraits/sentinel.webp",
+      "bytes": 69234,
+      "sha256": "943d16e0ef246dd5dc3bf6efaa22d262e67de8781409b68f0182d3f0e878a072"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-10.webp",
+      "bytes": 217828,
+      "sha256": "629abddeee95bc7cb172d62ea76ffe53757ba16d4cbf5150c2c2feba9fec84df"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-11.webp",
+      "bytes": 194400,
+      "sha256": "f6408e33b2679048f227ddf967f5a591cb70ae5aa5f1c68495914dc5ce5c1a47"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-12.webp",
+      "bytes": 247256,
+      "sha256": "8f39607b994e966b81c7ccdc20f0e11704b4f67dfca3ad205a02953d67c91cfe"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-13.webp",
+      "bytes": 100410,
+      "sha256": "a3616e78f9a7210d092ad5df81f5d03024d22c098f396dba9c18cba72a270d17"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-14.webp",
+      "bytes": 256808,
+      "sha256": "0745087e4e984645028ad40886a2c92600e5d592617dd40c20898f7ee5a41af2"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-15.webp",
+      "bytes": 121416,
+      "sha256": "ee82650d9dc857e51ffc037d607c7442711dfb1465266bd680dffef47f5a63e7"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-16.webp",
+      "bytes": 221520,
+      "sha256": "ef5dc3e73fe27b5e49a2bae1719453f960fc6ad0530e59b0baa87f7ae087e5a6"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/props/asset-9.webp",
+      "bytes": 196634,
+      "sha256": "d47000bdf105345d428002cfd9161ef6260cc39824b5300f6515c7088084b269"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-1.webp",
+      "bytes": 95734,
+      "sha256": "1ed3f76ddd04dbfb66f5c42183f15c36618f1ce76eb367b4a14d88730a1706f1"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-2.webp",
+      "bytes": 95940,
+      "sha256": "d27f9c7a86dde38ced45ffe12b35d53faad1efa7327a00a6ebf2b9508ee31fde"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-3.webp",
+      "bytes": 100018,
+      "sha256": "d43a3056a9a43b1a397c9da44cf1115bd885eb46623add688807470f9379f104"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-4.webp",
+      "bytes": 91730,
+      "sha256": "f97e02081d4de999df5c41829451d22ffb69cc41849235b81f5d9a7a0531152d"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-5.webp",
+      "bytes": 108308,
+      "sha256": "12f9715aac354afe7a9e3163d32d471e4168d66e0293aad7850f299836825c62"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-6.webp",
+      "bytes": 109574,
+      "sha256": "5092fce1a767d3c34363dd177cc4f6cc97343ece7fa6f11bc80b31bbdf089451"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-7.webp",
+      "bytes": 103512,
+      "sha256": "7f0e507f855e5c15bfed6868d1c4d9687de295c8757d23235d784edca8bbe4e5"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/terrain/asset-8.webp",
+      "bytes": 95320,
+      "sha256": "fa4b28aac76b80f093eb64bd1946c2b5305bbcfcca4c267b736b94961f5d002c"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/boss-attack.webp",
+      "bytes": 353446,
+      "sha256": "280463e833150378ef3d45bfd924971703de57ec8a729cb6bebeb145ae9fe9fa"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/boss-hurt.webp",
+      "bytes": 302178,
+      "sha256": "3f64eaa3ce87cd97a92e5720433a301477fa6d2b6882750e670d32ce0740f46c"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/boss-idle.webp",
+      "bytes": 328980,
+      "sha256": "038eeb4d15600ee64df8c71727e11bc822f0b0eeef2230d22c927a6aa661adc0"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-attack.webp",
+      "bytes": 191942,
+      "sha256": "1cbb2653675b15aaa26e6b7f2b8db504170dce88a70809b49dc2e4e27b823d11"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-hurt.webp",
+      "bytes": 150154,
+      "sha256": "b6f332b37ff36ffbed2770acafdeb0e1bc525306ca24b8b81d98a048c7ba7fd4"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-idle.webp",
+      "bytes": 181454,
+      "sha256": "0b15f8b265cb74edf9ed0416b5e3d39817231f659fdb46e52f6b8777b424583b"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-idle_ne.webp",
+      "bytes": 173146,
+      "sha256": "5111e04b921a2008172bd0a974747cb97e4b8bb43b1ea002ccd617f609fc430c"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-idle_sw.webp",
+      "bytes": 173770,
+      "sha256": "a258755205342f4d459241adbd375839f0185c424f377cff8c89d2cad00b3790"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/healer-skill.webp",
+      "bytes": 196798,
+      "sha256": "b8febfb7d2c2c33efd6dd1a80b25525bceb335e5097571c212c42e1219065c80"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/ranger-attack.webp",
+      "bytes": 169050,
+      "sha256": "a3051957d241693b8284262affbe16982ae3110105aab2aae275e504ca5e2f98"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/ranger-hurt.webp",
+      "bytes": 132032,
+      "sha256": "28eed14c7f5717de7e1fbfed3c8cb747e110df372098013abb21024c2e7735e1"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/ranger-idle.webp",
+      "bytes": 152122,
+      "sha256": "aaded8dba47a18b3752f7b8ac5a8b4be6a9aa508fabc6d5784c1db8c3b12e798"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/ranger-idle_ne.webp",
+      "bytes": 147610,
+      "sha256": "e2fbd5fdd3f074906b3ab6b611e251046672ed555a1b28e1b8773c686949501b"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/ranger-idle_sw.webp",
+      "bytes": 140822,
+      "sha256": "0b0f5380561ae76b3bb782fd2c621e27d2897392e93f176a0179bd8920c52464"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-attack.webp",
+      "bytes": 179070,
+      "sha256": "c6eed1555573e6985ab57e83e6d34c46892c4c445da71d9d7059d064c43826e6"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-hurt.webp",
+      "bytes": 149956,
+      "sha256": "71f511af34ac401223e0e64b89612c029cb4580f31716aa92ee3133f1f017931"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-idle.webp",
+      "bytes": 177506,
+      "sha256": "d6d0af7492a80b4cac4e004c2877cd7ae31435712891886ec3b056778ffd6ef1"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-idle_ne.webp",
+      "bytes": 173310,
+      "sha256": "570412ed0b3337beded489834c31cbe622d6ebf2ac4f9fba69b3f1bdbdc72cd5"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-idle_sw.webp",
+      "bytes": 164560,
+      "sha256": "ba675106e6e489be07dc97f7b3daeb7500c68de6b5660dd03b0fa71dd9ce65ae"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/sentinel-skill.webp",
+      "bytes": 219896,
+      "sha256": "402fabe299f77197867bcc46339fe03fbe14dfa5e37ed987674fb7a162da4054"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/spitter-attack.webp",
+      "bytes": 111018,
+      "sha256": "f4a8625010803ed675d6428488edc0869051de2f6db652e28dae44e6d66e51b5"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/spitter-hurt.webp",
+      "bytes": 100248,
+      "sha256": "0839be30db1ee7ee82cc07b16473f66a135cc070a0591130fdc307a5ae6ce620"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/spitter-idle.webp",
+      "bytes": 107826,
+      "sha256": "64b120d4f1ca6ec8e6b431d9f9ba85334c82125028764dd812059dfdcf698209"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/walker-attack.webp",
+      "bytes": 202128,
+      "sha256": "020b19319b9d96c5584dc351f4a6e09fe9f93de78a0b809449642a1849764c50"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/walker-hurt.webp",
+      "bytes": 189032,
+      "sha256": "3a4a4bcb5ca3e86d504b4980522a6bc30412743cf95fa71b9155d1b8c8419005"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/art/units/walker-idle.webp",
+      "bytes": 207048,
+      "sha256": "29440c41dc7195d12b3f6ba8284004ea498a5a9bcf7c317c75dcd9aa24d6de7b"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/ibm-plex-sans-OFL.txt",
+      "bytes": 4456,
+      "sha256": "7e6b2818edbd8f6a01ae80641cc8f16a51080d08fb4e532be3a0b6f74adb07da"
+    },
+    {
+      "path": "pecas/roguelike-tatico/assets/ibm-plex-sans-vf.woff2",
+      "bytes": 40240,
+      "sha256": "056e4e2459f57a0033c8c9c844ff19d6e42ac8602027803d4345823bcc939818"
+    },
+    {
+      "path": "pecas/roguelike-tatico/engine.js",
+      "bytes": 12640,
+      "sha256": "4c2447edb7cdb929b123b69b16918ef93c5314965e79689be5e83e288ce2efab"
+    },
+    {
+      "path": "pecas/roguelike-tatico/index.html",
+      "bytes": 3478,
+      "sha256": "4a172a6ca68912999f2b0f4eadc7c9fb5d75ec29d20796cfdc31defe74e6f4a3"
+    },
+    {
+      "path": "pecas/roguelike-tatico/main.js",
+      "bytes": 34150,
+      "sha256": "6a532a82ec7d91995d54c60037b4f5f7b5066d93a27a8ca07caf15a619227b88"
+    },
+    {
+      "path": "pecas/roguelike-tatico/package.json",
+      "bytes": 181,
+      "sha256": "5d5617deb1d2bcdd67beadb9019548a838b734bc1d38192d6ea8483795240529"
+    },
+    {
+      "path": "pecas/roguelike-tatico/style.css",
+      "bytes": 18599,
+      "sha256": "e42f439f77fe9582b47710b5883b394673fc6f02c9118880313d030fa85a06da"
+    },
+    {
+      "path": "pecas/sistema-agentico/.gitignore",
+      "bytes": 53,
+      "sha256": "7a63a26d218df47b6792c8ec84c1869234c7d44a474c58e62b618e26571b371c"
+    },
+    {
+      "path": "pecas/sistema-agentico/DIREITOS-E-ORIGENS.md",
+      "bytes": 962,
+      "sha256": "af4a5bebd331533ad5aa52ee98d5c2fa993d61ca4af42b77bbfb0ad0f960f3e1"
+    },
+    {
+      "path": "pecas/sistema-agentico/README.md",
+      "bytes": 1098,
+      "sha256": "73739d01b36a3046b239e2ac09be3bb43e1953f64cd9f1f556ad12640037dd1f"
+    },
+    {
+      "path": "pecas/sistema-agentico/index.html",
+      "bytes": 610,
+      "sha256": "9571b31a8b4d298749f6b96bc8c4bfb9a8621b162fcbb172f83c6c2265e54f6c"
+    },
+    {
+      "path": "pecas/sistema-agentico/package-lock.json",
+      "bytes": 63387,
+      "sha256": "9c4bb7df924831b26fb01031c881212748c21ac0653782193f3a30e4a5f87c6e"
+    },
+    {
+      "path": "pecas/sistema-agentico/package.json",
+      "bytes": 568,
+      "sha256": "66f92cbc27d855089b13c31a9add8d0167fe5b9cfe2b5c2d62448784aee637f2"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/direcao-revisao.html",
+      "bytes": 2617,
+      "sha256": "74a3c9597c8c6d77a30e97a66f3e40e88c8c57dcc00be4c70aa19feba45addb7"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/favicon.svg",
+      "bytes": 346,
+      "sha256": "af329c3a08ff3b7e02eebf49de3c314f3a2d75445eeb8ca45f9dbdb76749986c"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts/OFL.txt",
+      "bytes": 4403,
+      "sha256": "9e27a72ed30eb49a08678f6a5d6ed98ec7ba5368f541637ee0683ec9134ef966"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts/instrument-sans-400.ttf",
+      "bytes": 48616,
+      "sha256": "01689ad055025ff1891607b077513c9389f73360d471dcffa036e326af179b00"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts/instrument-sans-500.ttf",
+      "bytes": 48732,
+      "sha256": "a7bcb84cb01f6e33eecdd2cbff3f97ff1674c0e8e37c6921b6cd717b8c854d98"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts/instrument-sans-600.ttf",
+      "bytes": 48732,
+      "sha256": "5e39a358a65a72b6b74b56b384bbe17a61d8899d33cc255d49112e6522e3df0d"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts/instrument-sans-700.ttf",
+      "bytes": 48552,
+      "sha256": "d25efe5b0dcf3b36607d9a0fb046932547a5dfec407ea17162ca126d63b33d42"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/fonts.css",
+      "bytes": 804,
+      "sha256": "0c6b5c6d02e8bce4527f95bf113b542ea0d2f0b84e12f2e0bac63c790ea171b2"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/notas.html",
+      "bytes": 2559,
+      "sha256": "f77099f81ef38fb3c80c7349f25309e16f5df1d856fe5150e8be248db0d45005"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/referencias-revisao.html",
+      "bytes": 2892,
+      "sha256": "8bebdd7eba020ea29f52518ce015ebdbf446d436a80cf50aaf00ac0677cc8f4a"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/referencias.html",
+      "bytes": 2872,
+      "sha256": "f9386e552105a19f7506fefb6e7104f58c5c2a76f5c9f284e643adee6edcc89f"
+    },
+    {
+      "path": "pecas/sistema-agentico/public/revisao.html",
+      "bytes": 2573,
+      "sha256": "320efe4b79897cb3fa7643e56f9be0a2be62e0c363b76ca73af30c3694d75a8f"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/App.jsx",
+      "bytes": 22789,
+      "sha256": "24de14e6823905278698530daac7e51e67fa785aca54cb571a93d000b414136f"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/Discovery.jsx",
+      "bytes": 5196,
+      "sha256": "7cf4e7247691e32b6ee79645bc5f7f8fac58c1808648c66187e7da1abfcdc778"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/HeroScene.jsx",
+      "bytes": 11181,
+      "sha256": "a0decb86765db79a7cbbd59fd024cbb5c18899922ecf3767d4c9994bec981228"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/Weave.jsx",
+      "bytes": 4124,
+      "sha256": "44c0c038e92b6af2d88ce34ced5880e010193d98264665b97b4c83e38ce309c5"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/engine.js",
+      "bytes": 9461,
+      "sha256": "acbaafa639bd77a4ca66d8dfadc96a67bd409f7fb9cb62acd4fcb0ff1aa78c19"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/hero-scene.css",
+      "bytes": 9953,
+      "sha256": "08110acf932d70c40cb521a544138f69b92fd5e6a45680c1c68763f0c3b733bb"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/main.jsx",
+      "bytes": 224,
+      "sha256": "d9812a723920cf3d9bd3003ab37a8476af86e6871aeb8b0ba55224b8e600bf70"
+    },
+    {
+      "path": "pecas/sistema-agentico/src/styles.css",
+      "bytes": 39505,
+      "sha256": "5398ad7cf13ad0ed43c47e7f48c5aa99b46b56287699a873933e2895ad26c744"
+    },
+    {
+      "path": "pecas/sistema-agentico/vite.config.js",
+      "bytes": 139,
+      "sha256": "1d5c12ce316dfc93632a808c991f6e5f384713fecda18678e124103157a03a0e"
+    },
+    {
+      "path": "pecas/vertical/README.md",
+      "bytes": 1396,
+      "sha256": "70c1ef803b25bfaf6a36583fd9f6e191c3495ffd63ba1ae2dd19304be1bca5c7"
+    },
+    {
+      "path": "pecas/vertical/poster.jpg",
+      "bytes": 147754,
+      "sha256": "064a207d50afeb38bbded923276aa1085b9b29806b0665a6bbead7ac5836efe5"
+    }
+  ],
+  "release_assets": [
+    {
+      "path": "H2-custo-por-tarefa-entrega1.mp4",
+      "bytes": 220891133,
+      "sha256": "a2546e1d710f8036000a49e29b9caacd3bb4c99df15307eeb7cddcebfd03e347"
+    },
+    {
+      "path": "H2-projeto-editavel.zip",
+      "bytes": 2908383,
+      "sha256": "0f7ac149e74f63a052a46cfefbf71b6b4b99ae6153b4ba2ac021d02a03799085"
+    },
+    {
+      "path": "V1-projeto-editavel.zip",
+      "bytes": 6429439,
+      "sha256": "adbeb8f54870d0880528780e96cc5f25b076ce99142053023164bb6aa9360b31"
+    },
+    {
+      "path": "Vertical1_EXPORT.mp4",
+      "bytes": 75899042,
+      "sha256": "01b106f3e76ec64714ea90040e52255ae4da023a26a91675ec0426b16216271e"
+    },
+    {
+      "path": "pecas-web.zip",
+      "bytes": 32384470,
+      "sha256": "d9a674ad4a9116408cc809c3d3ef8ad204f42ab55ba4c3fc1016b21b37bf0798"
+    }
+  ],
+  "verification": {
+    "copied_source_builds": 4,
+    "desktop_mobile_boots": 10,
+    "real_interaction_flows": 5,
+    "documentation_routes_mobile": 7,
+    "status": "pass",
+    "independent_review": "public file/zip names and155 runtime resource references checked; no private prompts or generator code found"
+  },
+  "video_versions": {
+    "V1": {
+      "file": "Vertical1_EXPORT.mp4",
+      "video_frames": 2185,
+      "video_duration_seconds": 72.833333,
+      "container_duration_seconds": 72.917333,
+      "resolution": [
+        1080,
+        1920
+      ],
+      "fps": "30/1",
+      "note": "Located reexport with its own checksum; original MP4 checksum unavailable. DRP/DRT preserve original hashes."
+    },
+    "H2": {
+      "file": "H2-custo-por-tarefa-entrega1.mp4",
+      "frames": 8748,
+      "duration_seconds": 291.6,
+      "resolution": [
+        1920,
+        1080
+      ],
+      "fps": "30/1",
+      "note": "Checksum matches recorded first delivery."
+    }
+  },
+  "limitations": [
+    "No continuous auditory review confirmed in this session.",
+    "DRP/DRT retain original internal local paths, require relink and do not embed media.",
+    "Festival photograph rights are documented individually; no general content license granted."
+  ],
+  "manifest_self_hash": "Excluded to avoid self-reference."
+}

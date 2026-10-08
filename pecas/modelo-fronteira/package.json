@@ -1,0 +1,29 @@
+{
+  "name": "aresta-01-concept",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4317 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4317 --strictPort",
+    "example": "node public/docs/exemplo.js",
+    "predev": "node scripts/sync-engine.mjs",
+    "prebuild": "node scripts/sync-engine.mjs"
+  },
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/space-grotesk": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "motion": "^14.0.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "lighthouse": "^13.5.0",
+    "vite": "^8.3.3"
+  }
+}

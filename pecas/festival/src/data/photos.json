@@ -1,0 +1,110 @@
+{
+  "baianasystem": {
+    "sourcePage": "https://baianasystem.com.br/bio/",
+    "sourceImage": "https://baianasystem.com.br/wp-content/uploads/2021/06/LuizFranco-0482-scaled.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 50%",
+    "alt": "BaianaSystem ao vivo em palco iluminado de azul, com o público à frente.",
+    "src": "photos/baianasystem.jpg"
+  },
+  "nacao-zumbi": {
+    "sourcePage": "https://babelproducoes.com.br/nacaozumbi/",
+    "sourceImage": "https://babelproducoes.com.br/wp-content/uploads/2025/11/Foto-Nacao-Zumbi-1.webp",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 50%",
+    "alt": "Três integrantes da Nação Zumbi fotografados de baixo, sob o céu azul.",
+    "src": "photos/nacao-zumbi.jpg"
+  },
+  "bixiga-70": {
+    "sourcePage": "https://www.bixiga70.com.br/",
+    "sourceImage": "https://static.wixstatic.com/media/0dd1b7_57f81a977ae24b6dbb05e9cb4cdbe1fe~mv2.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 50%",
+    "alt": "Integrantes da Bixiga 70 com instrumentos em uma escadaria, em preto e branco.",
+    "src": "photos/bixiga-70.jpg"
+  },
+  "luedji-luna": {
+    "sourcePage": "https://www.accent-presse.com/artiste/luedji-luna/",
+    "sourceImage": "https://www.accent-presse.com/wp-content/uploads/IMG/zip/-645.zip",
+    "credit": "Tassia Nascimento — courtesy YB Music / Sterns Music",
+    "rights": "Photos HD x9 avec crédits. Licença de reutilização não informada.",
+    "position": "50% 35%",
+    "alt": "Luedji Luna com a mão no peito em retrato sobre fundo marrom.",
+    "src": "photos/luedji-luna.jpg"
+  },
+  "boogarins": {
+    "sourcePage": "https://festivalbananada.com/",
+    "sourceImage": "https://festivalbananada.com/art/artists/boogarins.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "A página identifica a imagem como “Boogarins — foto de divulgação”. Licença de uso não informada.",
+    "position": "50% 55%",
+    "alt": "Os quatro integrantes da Boogarins em retrato próximo sobre fundo claro.",
+    "src": "photos/boogarins.jpg"
+  },
+  "duda-beat": {
+    "sourcePage": "https://www.universalmusic.com.br/artista/duda-beat/",
+    "sourceImage": "https://www.universalmusic.com.br/wp-content/uploads/sites/628/2024/02/Duda-Beat.jpeg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 40%",
+    "alt": "Duda Beat com óculos escuros e um braço sobre a cabeça, em luz rosa e verde.",
+    "src": "photos/duda-beat.jpg"
+  },
+  "terno-rei": {
+    "sourcePage": "https://www.ternorei.com.br/about-1",
+    "sourceImage": "https://static.wixstatic.com/media/b6640b_534c3bedf1974503a2e901e698f8113a~mv2.png",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 45%",
+    "alt": "Os quatro integrantes do Terno Rei em retrato ao ar livre com vinheta escura.",
+    "src": "photos/terno-rei.jpg"
+  },
+  "liniker": {
+    "sourcePage": "https://linktr.ee/linikeroficial",
+    "sourceImage": "https://ugc.production.linktr.ee/f934a4b3-735e-4f04-8b33-6627bfb6abbc_02-Liniker-1080x1080-Avatar-Instagram-MelhorNoticia-Granulada.png",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 40%",
+    "alt": "Retrato próximo de Liniker com cabelo volumoso em luz quente e textura granulada.",
+    "src": "photos/liniker.jpg"
+  },
+  "ceu": {
+    "sourcePage": "https://www.sixdegreesrecords.com/ceu/",
+    "sourceImage": "https://www.sixdegreesrecords.com/wp-content/uploads/2007/12/C%C3%A9u_Gabriela-Mo-4.jpg",
+    "credit": "Gabriela Mo",
+    "rights": "All text and graphics on the site have been approved for reproduction.",
+    "position": "64% 45%",
+    "alt": "Céu sentada diante de um espelho arredondado em um ambiente iluminado pela janela.",
+    "src": "photos/ceu.jpg"
+  },
+  "o-terno": {
+    "sourcePage": "https://oterno.bandcamp.com/music",
+    "sourceImage": "https://f4.bcbits.com/img/0015979567_10.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 50%",
+    "alt": "O trio O Terno com roupas vermelhas, violão e câmera sobre fundo escuro.",
+    "src": "photos/o-terno.jpg"
+  },
+  "tulipa-ruiz": {
+    "sourcePage": "https://www.tuliparuiz.com.br/",
+    "sourceImage": "https://images.squarespace-cdn.com/content/v1/535aaf06e4b0d7c4f34dc328/1593703133811-S9XUFSF8WXCX0IBQ1OOR/10ElsaBouillot_Tulipa_SH_140220-40.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 28%",
+    "alt": "Tulipa Ruiz em retrato de corpo inteiro em preto e branco, diante de uma vitrine.",
+    "src": "photos/tulipa-ruiz.jpg"
+  },
+  "marina-sena": {
+    "sourcePage": "https://www.sonymusic.com.br/artistas/marina-sena/",
+    "sourceImage": "https://cdn-p.smehost.net/sites/69b9d56ce2b34bfe9fa65e29bd490e2c/wp-content/uploads/2025/02/capa-marina-sena.jpg",
+    "credit": "Crédito não identificado na fonte",
+    "rights": "Licença de uso da fotografia não informada na fonte.",
+    "position": "50% 50%",
+    "alt": "Retrato próximo de Marina Sena sob luz azul e violeta.",
+    "src": "photos/marina-sena.jpg"
+  }
+}

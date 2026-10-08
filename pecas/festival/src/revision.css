@@ -1,0 +1,966 @@
+/* Revisão 1: palco, cartaz e corrente. Fotos documentadas em data/photos.json. */
+:root {
+  --night: #081f2c;
+  --sun: #f1f45a;
+}
+.global-header {
+  background: var(--night);
+  color: var(--paper);
+}
+.concept-strip {
+  background: var(--sun);
+  color: var(--night);
+  letter-spacing: 0.07em;
+}
+.concept-strip span {
+  background: var(--night);
+}
+.global-header .hero-shell {
+  background: var(--night);
+}
+.site-header {
+  height: 94px;
+  border: 0;
+}
+.header-ticket {
+  background: var(--paper);
+  color: var(--night);
+  border: 0;
+  border-radius: 0;
+}
+.header-ticket:hover {
+  background: var(--sun);
+  color: var(--night);
+}
+.artist-image {
+  position: relative;
+  overflow: hidden;
+  background: var(--night);
+}
+.artist-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.photo-fallback {
+  display: grid;
+  place-items: center;
+  height: 100%;
+  color: var(--paper);
+  font-size: 13px;
+  padding: 20px;
+}
+.festival-hero {
+  min-height: 810px;
+  height: calc(100svh - 126px);
+  max-height: 1100px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--night);
+  color: var(--paper);
+}
+.hero-photograph {
+  position: absolute;
+  inset: -40px 0 -80px;
+  z-index: -3;
+  transform: translateY(var(--photo-y, 0px));
+}
+.hero-photograph .artist-image {
+  width: 100%;
+  height: 100%;
+}
+.hero-photograph img {
+  animation: photo-arrive 0.7s ease-out both;
+}
+@keyframes photo-arrive {
+  from {
+    opacity: 0.3;
+    transform: scale(1.035);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.hero-photo-shade {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  background:
+    linear-gradient(90deg, #081f2c99, #081f2c18 70%),
+    linear-gradient(0deg, #081f2ce6, transparent 68%);
+}
+.hero-service {
+  display: flex;
+  justify-content: space-between;
+  padding: 27px 4.4%;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+.hero-copy {
+  position: relative;
+  padding: 40px 4.4% 140px;
+  z-index: 2;
+  pointer-events: none;
+}
+.hero-invitation {
+  font-size: 15px;
+  line-height: 1.4;
+  margin-bottom: 19px;
+}
+.festival-hero h1 {
+  font:
+    900 clamp(150px, 17.4vw, 290px)/0.74 Barlow,
+    sans-serif;
+  letter-spacing: -0.03em;
+  width: min-content;
+  margin-left: -0.025em;
+}
+.festival-hero h1 span {
+  display: block;
+}
+.festival-hero h1 span + span {
+  -webkit-text-stroke: 2px var(--paper);
+  color: transparent;
+  margin-top: 16px;
+}
+.hero-copy .button {
+  margin-top: 35px;
+  pointer-events: auto;
+}
+.button.sun {
+  color: var(--night);
+  background: var(--sun);
+  border-radius: 0;
+  border: 0;
+}
+.button.sun:hover {
+  background: var(--paper);
+}
+.hero-wave {
+  position: absolute;
+  width: 420px;
+  height: 480px;
+  right: -170px;
+  top: 28%;
+  z-index: -1;
+  opacity: 0.9;
+  transform: rotate(-18deg);
+  pointer-events: none;
+}
+.hero-wave .key-visual {
+  width: 100%;
+  height: 100%;
+  fill: var(--sun);
+  animation: none;
+}
+.tone-pop .hero-wave .key-visual {
+  fill: var(--orange);
+}
+.tone-soul .hero-wave .key-visual {
+  fill: var(--sun);
+}
+.hero-current-caption {
+  position: absolute;
+  right: 8%;
+  bottom: 175px;
+  width: 300px;
+  z-index: 3;
+}
+.hero-current-caption > span {
+  font-size: 11px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.hero-current-caption button {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font:
+    900 55px/1 Barlow,
+    sans-serif;
+  padding: 8px 0;
+}
+.hero-current-caption button:hover {
+  color: var(--sun);
+}
+.hero-current-caption p {
+  font-size: 14px;
+}
+.hero-current-caption small {
+  display: block;
+  margin-top: 18px;
+  font-size: 9px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+.hero-control-dock {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 24px 4.4%;
+  border-top: 1px solid #fffef74d;
+  background: #081f2cce;
+}
+.current-picker {
+  display: flex;
+  gap: 35px;
+}
+.current-picker button {
+  min-height: 48px;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  text-align: left;
+  border-bottom: 2px solid transparent;
+}
+.current-picker button > span {
+  font-size: 10px;
+  opacity: 0.7;
+}
+.current-picker button i {
+  width: 7px;
+  height: 7px;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+}
+.current-picker button[aria-pressed="true"] {
+  color: var(--sun);
+  border-color: var(--sun);
+}
+.current-picker button[aria-pressed="true"] i {
+  background: currentColor;
+}
+.festival-hero .frequency-control {
+  position: static;
+  width: 275px;
+  margin: 0;
+  grid-template-columns: 1fr 36px;
+  color: var(--paper);
+}
+.festival-hero .frequency-control label {
+  font-size: 10px;
+}
+.festival-hero .frequency-control label span {
+  color: var(--paper);
+  opacity: 0.7;
+}
+.festival-hero .frequency-control input {
+  width: 100%;
+  accent-color: var(--sun);
+}
+.festival-hero .frequency-control input::-webkit-slider-thumb {
+  background: var(--sun);
+}
+.festival-hero .frequency-control input::-moz-range-thumb {
+  background: var(--sun);
+}
+.festival-hero :focus-visible {
+  outline-color: var(--sun);
+}
+.lineup-section {
+  padding-top: 90px;
+  padding-bottom: 70px;
+  overflow: hidden;
+}
+.lineup-intro {
+  align-items: end;
+  margin-bottom: 55px;
+}
+.lineup-intro h2 {
+  font:
+    900 clamp(90px, 10vw, 160px)/0.85 Barlow,
+    sans-serif;
+  letter-spacing: -0.025em;
+  margin-top: 20px;
+}
+.lineup-intro h2 em {
+  color: var(--blue);
+  font-style: normal;
+}
+.lineup-intro p {
+  font-size: 15px;
+  line-height: 1.7;
+  padding-bottom: 7px;
+}
+.photo-day + .photo-day {
+  margin-top: 60px;
+}
+.photo-day-heading {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-top: 1px solid var(--ink);
+  padding: 20px 0;
+}
+.photo-day-heading > button {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  background: var(--sun);
+  padding: 10px 15px;
+  color: var(--night);
+}
+.photo-day-heading strong {
+  font:
+    900 50px/0.9 Barlow,
+    sans-serif;
+}
+.photo-day-heading button span {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+.photo-day-heading button:hover {
+  background: var(--orange);
+}
+.photo-day-heading h3 {
+  font:
+    900 clamp(32px, 3.5vw, 53px)/1 Barlow,
+    sans-serif;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+.day-index {
+  margin-left: auto;
+  font-size: 10px;
+  letter-spacing: 0.09em;
+}
+.photo-day-artists {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 8px;
+}
+.photo-artist {
+  padding: 0;
+  position: relative;
+  text-align: left;
+  overflow: hidden;
+  color: var(--paper);
+  background: var(--night);
+  min-width: 0;
+}
+.photo-artist > .artist-image {
+  height: 310px;
+}
+.photo-artist img {
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.photo-artist:hover img {
+  transform: scale(1.035);
+}
+.photo-artist-label {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 16px 9px;
+  font:
+    900 clamp(32px, 3vw, 48px)/0.95 Barlow,
+    sans-serif;
+}
+.photo-artist-label svg {
+  flex-shrink: 0;
+  width: 20px;
+}
+.photo-artist-tag {
+  display: block;
+  font-size: 9px;
+  line-height: 1.5;
+  padding: 0 16px 16px;
+  color: #fffef7c9;
+}
+.photo-headliner .photo-artist-label {
+  color: var(--sun);
+}
+.photo-headliner {
+  background: var(--blue);
+}
+.photo-day-1 .photo-headliner {
+  background: var(--night);
+}
+.photo-day-2 .photo-headliner {
+  background: var(--orange);
+  color: var(--night);
+}
+.photo-day-2 .photo-headliner .photo-artist-label {
+  color: var(--night);
+}
+.photo-day-2 .photo-headliner .photo-artist-tag {
+  color: var(--night);
+}
+.lineup-note {
+  font-size: 12px;
+  margin-top: 25px;
+}
+.program-section {
+  border-top: 12px solid var(--blue);
+}
+.show-item {
+  padding-right: 91px;
+  overflow: hidden;
+}
+.show-photo {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 78px;
+  opacity: 0.92;
+}
+.show-content {
+  position: relative;
+  z-index: 1;
+}
+.show-item .artist-link {
+  font-size: clamp(30px, 2.75vw, 44px);
+  gap: 8px;
+}
+.show-item .artist-link svg {
+  width: 18px;
+}
+.schedule-list .show-item {
+  padding-right: 91px;
+}
+.festival-section {
+  padding-top: 95px;
+  padding-bottom: 110px;
+  gap: 5%;
+}
+.festival-photo-collage {
+  position: relative;
+  min-height: 640px;
+}
+.story-photo-main {
+  position: absolute;
+  width: 85%;
+  height: 370px;
+  top: 0;
+  left: 0;
+  transform: rotate(-3deg);
+  border: 6px solid var(--paper);
+}
+.story-photo-portrait {
+  position: absolute;
+  width: 52%;
+  height: 325px;
+  bottom: 0;
+  right: 0;
+  transform: rotate(6deg);
+  border: 6px solid var(--paper);
+  z-index: 2;
+}
+.story-wave {
+  position: absolute;
+  width: 75%;
+  left: -18%;
+  bottom: -6%;
+  transform: rotate(24deg);
+}
+.story-wave .key-visual {
+  fill: var(--night);
+  animation: none;
+}
+.story-stamp {
+  position: absolute;
+  top: 285px;
+  left: 4%;
+  background: var(--sun);
+  padding: 18px;
+  font:
+    900 34px/0.95 Barlow,
+    sans-serif;
+  transform: rotate(-7deg);
+  z-index: 3;
+}
+.festival-story h2 {
+  font-size: clamp(85px, 8vw, 130px);
+}
+.artist-detail-top {
+  position: relative;
+  min-height: 365px;
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  isolation: isolate;
+}
+.artist-detail-photo {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+.artist-detail-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #081f2ce6, #081f2c15);
+  z-index: -1;
+}
+.artist-detail-top > span,
+.artist-detail-top h2 {
+  position: relative;
+  text-shadow: 0 2px 12px #081f2c;
+}
+.artist-detail-top h2 {
+  margin: 15px 0 12px;
+}
+.photo-credit {
+  margin-top: 23px;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.photo-credit a {
+  text-decoration: underline;
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+}
+.photo-credit + .fine-print {
+  margin-top: 9px;
+}
+footer {
+  background: var(--night);
+}
+@media (min-width: 1800px) {
+  .festival-hero {
+    min-height: 940px;
+  }
+  .hero-current-caption {
+    width: 360px;
+  }
+  .photo-artist > .artist-image {
+    height: 390px;
+  }
+}
+@media (max-width: 1100px) and (min-width: 768px) {
+  .festival-hero {
+    height: 900px;
+    min-height: 0;
+  }
+  .festival-hero h1 {
+    font-size: 20vw;
+  }
+  .hero-current-caption {
+    right: 6%;
+    bottom: 170px;
+    width: 230px;
+  }
+  .hero-current-caption button {
+    font-size: 42px;
+  }
+  .hero-wave {
+    right: -210px;
+  }
+  .hero-control-dock {
+    gap: 25px;
+  }
+  .current-picker {
+    gap: 20px;
+  }
+  .current-picker button {
+    flex-direction: column;
+    align-items: start;
+    gap: 4px;
+  }
+  .current-picker button i {
+    display: none;
+  }
+  .festival-hero .frequency-control {
+    width: 200px;
+  }
+  .photo-day-artists {
+    grid-template-columns: 1.35fr 1fr 1fr 1fr;
+  }
+  .photo-artist > .artist-image {
+    height: 245px;
+  }
+  .photo-artist-label {
+    font-size: 31px;
+    padding: 12px 10px 8px;
+  }
+  .photo-artist-tag {
+    padding: 0 10px 12px;
+  }
+  .day-index {
+    display: none;
+  }
+  .show-item,
+  .schedule-list .show-item {
+    padding-right: 69px;
+  }
+  .show-photo {
+    width: 56px;
+  }
+  .show-item .artist-link {
+    font-size: 31px;
+  }
+  .festival-section {
+    gap: 35px;
+  }
+  .festival-photo-collage {
+    min-height: 615px;
+  }
+  .story-photo-main {
+    height: 310px;
+  }
+  .story-photo-portrait {
+    width: 65%;
+    height: 300px;
+  }
+  .story-stamp {
+    top: 255px;
+    font-size: 27px;
+  }
+}
+@media (max-width: 767px) {
+  .concept-strip {
+    font-size: 8px;
+    padding: 9px 8px;
+    gap: 8px;
+    min-height: 32px;
+  }
+  .site-header {
+    height: 102px;
+    margin: 0 20px;
+  }
+  .festival-hero {
+    min-height: 775px;
+    height: calc(100svh - 134px);
+    max-height: none;
+  }
+  .hero-service {
+    padding: 21px 20px;
+    font-size: 9px;
+  }
+  .hero-photograph {
+    inset: -10px -180px -20px;
+  }
+  .hero-photograph img {
+    object-position: 55% 50% !important;
+  }
+  .tone-pop .hero-photograph {
+    inset: 0 -380px 0 -160px;
+  }
+  .tone-pop .hero-photograph img {
+    object-position: 58% 50% !important;
+  }
+  .tone-soul .hero-photograph {
+    inset: 0 -70px 0 -160px;
+  }
+  .hero-photo-shade {
+    background:
+      linear-gradient(0deg, #081f2cf5, transparent 88%),
+      linear-gradient(90deg, #081f2c33, #081f2c05);
+  }
+  .hero-copy {
+    padding: 38px 20px 0;
+  }
+  .hero-invitation {
+    font-size: 12px;
+    margin-bottom: 21px;
+  }
+  .festival-hero h1 {
+    font-size: clamp(100px, 26.8vw, 204px);
+    line-height: 0.78;
+  }
+  .festival-hero h1 span + span {
+    margin-top: 10px;
+    -webkit-text-stroke-width: 1.5px;
+  }
+  .hero-copy .button {
+    margin-top: 25px;
+    font-size: 12px;
+    min-height: 47px;
+    padding: 14px 18px;
+  }
+  .hero-wave {
+    width: 250px;
+    height: 310px;
+    top: 28%;
+    right: -160px;
+    opacity: 0.8;
+  }
+  .hero-current-caption {
+    left: 20px;
+    right: 20px;
+    bottom: 210px;
+    width: auto;
+  }
+  .hero-current-caption > span {
+    font-size: 9px;
+  }
+  .hero-current-caption button {
+    font-size: 40px;
+    padding: 5px 0;
+  }
+  .hero-current-caption p {
+    font-size: 12px;
+  }
+  .hero-current-caption small {
+    font-size: 8px;
+    margin-top: 8px;
+  }
+  .hero-control-dock {
+    padding: 20px;
+    flex-direction: column;
+    gap: 17px;
+    align-items: stretch;
+  }
+  .current-picker {
+    gap: 0;
+    justify-content: space-between;
+  }
+  .current-picker button {
+    min-height: 48px;
+    flex-direction: column;
+    gap: 6px;
+    align-items: start;
+    padding: 6px 4px 9px 0;
+    font-size: 11px;
+  }
+  .current-picker button > span {
+    font-size: 9px;
+  }
+  .current-picker button i {
+    display: none;
+  }
+  .festival-hero .frequency-control {
+    width: 100%;
+    display: grid;
+    column-gap: 15px;
+  }
+  .festival-hero .frequency-control input {
+    width: 100%;
+    height: 27px;
+  }
+  .festival-hero .frequency-control label {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+  .lineup-section {
+    padding: 64px 20px 50px;
+  }
+  .lineup-intro {
+    margin-bottom: 35px;
+  }
+  .lineup-intro h2 {
+    font-size: 90px;
+    margin-top: 15px;
+  }
+  .lineup-intro p {
+    font-size: 12px;
+    margin-top: 17px;
+  }
+  .photo-day + .photo-day {
+    margin-top: 38px;
+  }
+  .photo-day-heading {
+    gap: 14px;
+    padding: 14px 0;
+  }
+  .photo-day-heading > button {
+    gap: 7px;
+    padding: 8px;
+    flex-shrink: 0;
+  }
+  .photo-day-heading strong {
+    font-size: 36px;
+  }
+  .photo-day-heading button span {
+    font-size: 8px;
+    width: 30px;
+    line-height: 1.5;
+  }
+  .photo-day-heading button svg {
+    width: 15px;
+  }
+  .photo-day-heading h3 {
+    font-size: 32px;
+  }
+  .day-index {
+    display: none;
+  }
+  .photo-day-artists {
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+  .photo-headliner {
+    grid-column: 1 / -1;
+  }
+  .photo-headliner > .artist-image {
+    height: 280px;
+  }
+  .photo-artist:last-child {
+    grid-column: 1 / -1;
+  }
+  .photo-artist > .artist-image {
+    height: 190px;
+  }
+  .photo-headliner > .artist-image {
+    height: 260px;
+  }
+  .photo-artist:last-child > .artist-image {
+    height: 210px;
+  }
+  .photo-artist-label {
+    font-size: 31px;
+    padding: 12px 11px 8px;
+    gap: 8px;
+  }
+  .photo-headliner .photo-artist-label {
+    font-size: 46px;
+  }
+  .photo-artist-label svg {
+    width: 17px;
+  }
+  .photo-artist-tag {
+    padding: 0 11px 13px;
+    font-size: 8px;
+  }
+  .lineup-note {
+    font-size: 10px;
+    line-height: 1.6;
+  }
+  .show-item,
+  .schedule-list .show-item {
+    padding-right: 77px;
+  }
+  .show-photo {
+    width: 65px;
+  }
+  .show-item .artist-link {
+    font-size: 31px;
+    gap: 6px;
+  }
+  .show-item .artist-link svg {
+    width: 15px;
+  }
+  .show-item .favorite-button.compact {
+    width: 35px;
+    min-width: 35px;
+    padding: 5px;
+  }
+  .show-item p {
+    max-width: 210px;
+  }
+  .festival-section {
+    padding: 55px 20px 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+  }
+  .festival-photo-collage {
+    height: 430px;
+    min-height: 0;
+  }
+  .story-photo-main {
+    width: 88%;
+    height: 240px;
+    border-width: 4px;
+  }
+  .story-photo-portrait {
+    height: 230px;
+    width: 53%;
+    border-width: 4px;
+  }
+  .story-stamp {
+    top: 205px;
+    font-size: 26px;
+    padding: 13px;
+  }
+  .story-wave {
+    bottom: -9%;
+  }
+  .festival-story h2 {
+    font-size: 90px;
+  }
+  .artist-detail-top {
+    min-height: 310px;
+    padding: 65px 23px 25px;
+  }
+  .artist-detail-top h2 {
+    font-size: 62px;
+  }
+  .artist-detail-body {
+    padding: 25px 23px;
+  }
+}
+@media (max-width: 374px) {
+  .festival-hero h1 {
+    font-size: 26vw;
+  }
+  .hero-current-caption button {
+    font-size: 36px;
+  }
+  .current-picker button {
+    font-size: 10px;
+  }
+  .photo-day-heading h3 {
+    font-size: 28px;
+  }
+  .show-item .artist-link {
+    font-size: 27px;
+  }
+  .festival-story h2 {
+    font-size: 79px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-photograph {
+    transform: none;
+  }
+  .hero-photograph img,
+  .photo-artist img {
+    animation: none;
+    transition: none;
+  }
+  .photo-artist:hover img {
+    transform: none;
+  }
+}
+
+.artist-image[data-artist="luedji-luna"] img {
+  transform: scale(1.04);
+}
+.photo-artist:hover .artist-image[data-artist="luedji-luna"] img {
+  transform: scale(1.065);
+}
+@media (prefers-reduced-motion: reduce) {
+  .photo-artist:hover .artist-image[data-artist="luedji-luna"] img {
+    transform: scale(1.04);
+  }
+}
+/* O retrato claro de Duda exige proteção de contraste própria. */
+.tone-pop .hero-photo-shade {
+  background:
+    linear-gradient(90deg, #081f2cb3, #081f2c45 76%),
+    linear-gradient(0deg, #081f2ce6, transparent 65%, #081f2c65);
+}
+@media (max-width: 767px) {
+  .tone-pop .hero-photo-shade {
+    background: linear-gradient(0deg, #081f2ceb, #081f2c80 75%, #081f2c99);
+  }
+}
+/* Evita camada fixa fora da tela em capturas longas; mantém acesso por Tab. */
+.skip-link {
+  opacity: 0;
+  pointer-events: none;
+}
+.skip-link:focus {
+  opacity: 1;
+  pointer-events: auto;
+}
+@media (max-width: 767px) {
+  .concept-strip {
+    font-size: 10px;
+    letter-spacing: 0.035em;
+  }
+}

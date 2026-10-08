@@ -1,0 +1,18 @@
+{
+  "assets": [
+    {
+      "id": "home-investigacao-panorama",
+      "model_id": "gpt-image-2.5-sunburst",
+      "sha256": "cef3a49d18312bc97e8ba4b7a48312016d0ecaac9873d2e29af96563b286f14a",
+      "actual_width": 2048,
+      "actual_height": 1152
+    },
+    {
+      "id": "home-investigacao-mobile",
+      "model_id": "gpt-image-2.5-sunburst",
+      "sha256": "16bdbbd5c0efeb0ab6e91c60b2763656190f1b58e75c76fc4af6e14eae2ddadd",
+      "actual_width": 2048,
+      "actual_height": 2048
+    }
+  ]
+}

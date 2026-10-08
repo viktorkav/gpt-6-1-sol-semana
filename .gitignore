@@ -1,0 +1,15 @@
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.browsers/
+**/.browsers/
+.playwright-mcp/
+**/.playwright-mcp/
+.DS_Store
+*.log
+.env
+.env.*
+__pycache__/
+**/__pycache__/
+assets-verificados.json

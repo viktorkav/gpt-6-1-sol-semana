@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#232325">
+  <meta name="description" content="Victor, o ViktorKav. Investigações práticas de IA, games e tecnologia. Explore vídeos, tutoriais e ferramentas reais.">
+  <meta name="robots" content="noindex, nofollow">
+  <title>ViktorKav | Eu vou lá e testo.</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="preload" href="assets/design-system/assets/fontes/ibm-plex-sans-vf.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="src/site.generated.css">
+</head>
+<body class="sitio">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <svg class="filter-defs" aria-hidden="true" width="0" height="0"><defs><filter id="portrait-outline" x="-10%" y="-10%" width="120%" height="120%" color-interpolation-filters="sRGB"><feMorphology in="SourceAlpha" operator="dilate" radius="2.8" result="expanded"/><feFlood flood-color="#81d3ea"/><feComposite in2="expanded" operator="in" result="outline"/><feMerge><feMergeNode in="outline"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs></svg>
+  <header class="site-header">
+    <div class="header-inner wrap">
+      <a class="brand" href="#inicio" aria-label="ViktorKav, início"><img src="assets/design-system/assets/marca/vk-tinta-clara.svg" width="48" height="47" alt="Marca VK"><span>ViktorKav</span></a>
+      <nav class="main-nav" aria-label="Principal" id="main-nav"><a href="#canal">Vídeos</a><a href="#projetos">Projetos</a><a href="#acervo">Acervo</a><a href="#sobre">Sobre</a></nav>
+      <a class="header-youtube" href="https://www.youtube.com/@vkav">YouTube <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle js-only" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+    </div>
+  </header>
+  <main id="conteudo">
+    <section class="hero wrap" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-heading"><h1 id="hero-title">Eu vou lá e testo.</h1><p>IA, games e tecnologia ficam interessantes na prática.<br> Escolha uma curiosidade. Eu te mostro por onde começar.</p></div>
+      <div class="discovery-scene" data-selected-trail="ia">
+        <picture class="scene-art" aria-hidden="true"><source media="(max-width: 640px)" srcset="assets/revisao-1/home-investigacao-mobile-384.webp 384w, assets/revisao-1/home-investigacao-mobile-768.webp 768w, assets/revisao-1/home-investigacao-mobile-1280.webp 1280w, assets/revisao-1/home-investigacao-mobile.webp 2048w" sizes="calc(100vw - 36px)"><img src="assets/revisao-1/home-investigacao-panorama.webp" srcset="assets/revisao-1/home-investigacao-panorama-768.webp 768w, assets/revisao-1/home-investigacao-panorama-1280.webp 1280w, assets/revisao-1/home-investigacao-panorama.webp 2048w" sizes="(max-width: 1100px) calc(100vw - 64px), (max-width: 1376px) calc(100vw - 96px), 1280px" width="2048" height="1152" alt="" fetchpriority="high"></picture>
+        <div class="scene-art-error" hidden>Ilustração indisponível. Escolha um assunto abaixo.</div>
+        <div class="portrait-layer"><img class="portrait" src="assets/retratos/vk-recorte-1400.webp" srcset="assets/revisao-1/vk-retrato-700.webp 700w, assets/retratos/vk-recorte-1400.webp 1400w" sizes="(max-width:640px) 75vw, 430px" width="1400" height="1385" alt="Victor, o ViktorKav, sorrindo de camiseta preta." fetchpriority="high"></div>
+        <span class="scene-signature">Victor, o ViktorKav.</span>
+      </div>
+      <div class="discovery-controls"><p id="discovery-label">O que te trouxe aqui?</p><div class="trail-switch js-only" role="group" aria-labelledby="discovery-label"><button type="button" data-trail="ia" aria-pressed="true" aria-controls="trail-area"><span class="trail-symbol" aria-hidden="true">✳</span> IA</button><button type="button" data-trail="games" aria-pressed="false" aria-controls="trail-area"><span class="trail-symbol" aria-hidden="true">✦</span> Games</button><button type="button" data-trail="construir" aria-pressed="false" aria-controls="trail-area"><span class="trail-symbol" aria-hidden="true">＋</span> Construir</button></div><a class="all-content text-link" href="#acervo">Ir direto ao acervo <span aria-hidden="true">↓</span></a></div>
+      <p class="sr-only" id="trail-status" role="status" aria-live="polite"></p>
+      <div class="trail-area" id="trail-area">{{TRAILS}}</div>
+      <p class="art-note">Cenário ilustrado de investigação. Retrato original do Victor.</p>
+    </section>
+    <section class="editorial section wrap" id="canal" aria-labelledby="editorial-title">
+      <div class="section-top"><div><h2 id="editorial-title">O teste continua.</h2><p class="section-deck">Outras perguntas que renderam uma investigação.</p></div><a class="text-link" href="https://www.youtube.com/@vkav/videos">Todos os vídeos <span aria-hidden="true">↗</span></a></div>
+      <div class="editorial-grid">{{FEATURED}}</div><p class="source-note">Curadoria do snapshot de 28/09/2026. Novas publicações no <a href="https://www.youtube.com/@vkav/videos">canal</a>.</p>
+    </section>
+    <section class="projects section" id="projetos" aria-labelledby="projects-title"><div class="wrap">
+      <div class="section-top"><div><h2 id="projects-title">Depois do vídeo,<br>fica a ferramenta.</h2><p class="section-deck">Projetos para continuar a descoberta fora do play.</p></div><a class="text-link" href="https://github.com/viktorkav">Código no GitHub <span aria-hidden="true">↗</span></a></div>
+      <div class="project-shelf">
+        <a class="project-destination media-card" href="https://viktorkav.com.br/monitor/"><div class="media-frame project-image"><img src="assets/fichas/kavmonitor-studio.webp" width="1200" height="750" loading="lazy" alt="Arte do KavMonitor: um radar ciano numa bancada de estúdio."></div><div class="project-info"><h3>KavMonitor <span aria-hidden="true">↗</span></h3><p>Notícias e contexto de games, tecnologia e cultura digital.</p></div></a>
+        <a class="project-destination media-card" href="https://viktorkav.com.br/promos/"><div class="media-frame project-image"><img src="assets/fichas/vkpromos-studio-600.webp" width="600" height="375" loading="lazy" alt="Arte do VKPromos: símbolo de etiqueta sobre uma bancada."></div><div class="project-info"><h3>VKPromos <span aria-hidden="true">↗</span></h3><p>Produtos, preços e histórico para decidir quando comprar.</p></div></a>
+        <a class="project-destination media-card" href="https://viktorkav.com.br/tutoriais/"><div class="media-frame project-image"><img src="assets/fichas/tutoriais-studio-600.webp" width="600" height="375" loading="lazy" alt="Arte de uma bancada dedicada aos tutoriais."></div><div class="project-info"><h3>Tutoriais <span aria-hidden="true">↗</span></h3><p>Obsidian, transcrição local, servidor em casa. Do zero ao funcionando.</p></div></a>
+      </div><p class="source-note">Ilustrações dos projetos reaproveitadas do acervo ViktorKav.</p>
+      <div class="open-source"><div class="open-source-intro"><h3>Também dá para<br> abrir o código.</h3><p>Ferramentas e experimentos públicos.</p></div><div class="repo-list">
+        <a class="repo-link" href="https://github.com/viktorkav/qr-code-generator"><span class="repo-name">QR Code Generator</span><p>QR codes com cores, logo e exportação em PNG ou SVG.</p><span aria-hidden="true">↗</span></a>
+        <a class="repo-link" href="https://github.com/viktorkav/5-scripts"><span class="repo-name">5 Scripts</span><p>Utilitários para organizar arquivos e o espaço de trabalho.</p><span aria-hidden="true">↗</span></a>
+        <a class="repo-link" href="https://github.com/viktorkav/scrollrec"><span class="repo-name">ScrollRec</span><p>Páginas da web em vídeos de rolagem para macOS.</p><span aria-hidden="true">↗</span></a>
+      </div></div>
+      <a class="regua-link" href="https://viktorkav.com.br/regua"><div><span class="meta">Para membros do canal</span><h3>Uma régua para pensar a IA.</h3><p>Explore avaliações e compare o que importa para seu uso.</p></div><span class="regua-action">Conhecer a Régua <span aria-hidden="true">↗</span></span></a>
+    </div></section>
+    <section class="archive section wrap" id="acervo" aria-labelledby="archive-title">
+      <div class="archive-intro"><h2 id="archive-title">A próxima pergunta está aqui.</h2><p class="section-deck">367 entradas reais: vídeos, guias e ferramentas para seguir investigando.</p></div>
+      <form class="archive-controls js-only" id="archive-form" role="search" aria-label="Busca no acervo">
+        <div class="search-field"><label for="search">Buscar no acervo</label><div class="search-input-row"><input id="search" type="search" name="q" placeholder="Uma ideia, um jogo, uma ferramenta…" autocomplete="off" maxlength="200"><button type="button" id="clear-search" class="clear-search" aria-label="Limpar busca" hidden>×</button><button type="submit" class="search-submit">Buscar <span aria-hidden="true">↗</span></button></div></div>
+        <div class="filter-row"><fieldset class="theme-filters"><legend class="sr-only">Filtrar por assunto</legend><button type="button" data-theme="" aria-pressed="true">Tudo</button><button type="button" data-theme="IA" aria-pressed="false">IA</button><button type="button" data-theme="Games" aria-pressed="false">Games</button><button type="button" data-theme="Tecnologia" aria-pressed="false">Tecnologia</button><button type="button" data-theme="Na prática" aria-pressed="false">Na prática</button><button type="button" data-theme="Projetos" aria-pressed="false">Projetos</button></fieldset><div class="type-filter"><label for="type">Formato</label><select id="type" name="type"><option value="">Todos</option><option value="video">Vídeos</option><option value="tutorial">Tutoriais</option><option value="project">Projetos</option></select></div></div>
+      </form>
+      <div class="archive-status"><p id="result-count" role="status" aria-live="polite">{{COUNT}} itens no acervo</p><button id="reset-filters" class="text-link js-only" type="button" hidden>Limpar filtros <span aria-hidden="true">↺</span></button></div>
+      <noscript><p class="no-script-note">O acervo completo está abaixo. A busca e os filtros precisam de JavaScript; os links continuam disponíveis.</p></noscript>
+      <div class="archive-list" id="archive-list">{{ARCHIVE}}</div>
+      <div class="empty-state" id="empty-state" hidden><p class="meta">A curiosidade pode ir por outro caminho.</p><h3>Nenhum resultado por aqui.</h3><p>Tente outro termo ou limpe os filtros para explorar o acervo.</p><button id="empty-reset" type="button" class="button button-primary">Explorar tudo <span aria-hidden="true">↗</span></button></div>
+      <div class="archive-footer"><button id="load-more" class="button button-outline js-only" type="button">Mostrar mais <span aria-hidden="true">+</span></button><p class="source-note">Índice de 14/08/2026 + seleção de 28/09/2026.<br>Projetos GitHub consultados em 07/10/2026.</p></div>
+    </section>
+
+    <section class="about section wrap" id="sobre" aria-labelledby="about-title"><div class="about-signature"><img src="assets/design-system/assets/marca/vk-tinta-clara.svg" width="100" height="97" alt="Marca VK"><p>Victor.<br>ViktorKav no canal.</p></div><div class="about-copy"><h2 id="about-title">Curiosidade com contexto.</h2><p>Sou criador de conteúdo sobre games, tecnologia e cultura digital. Me interessa entender o que uma ferramenta muda na prática, por que um jogo funciona e o que dá para construir com essas descobertas.</p><p>Nos vídeos, nos projetos e nas conversas, a investigação continua.</p><div class="about-links"><a class="text-link" href="https://discord.viktorkav.com.br">Converse no Discord <span aria-hidden="true">↗</span></a><a class="text-link" href="https://viktorkav.com.br/media_kit/">Mídia kit <span aria-hidden="true">↗</span></a></div></div></section>
+  </main>
+  <footer class="site-footer wrap">
+    <div class="footer-top"><p>Mais perguntas. Menos ruído.</p><a class="text-link" href="mailto:vic.cavalcante@gmail.com">Falar por e-mail <span aria-hidden="true">↗</span></a></div>
+    <nav class="social-nav" aria-label="Onde acompanhar"><a href="https://www.youtube.com/@vkav">YouTube ↗</a><a href="https://twitch.tv/viktorkav">Twitch ↗</a><a href="https://instagram.com/viktorkav">Instagram ↗</a><a href="https://tiktok.com/@viktorkav1">TikTok ↗</a><a href="https://github.com/viktorkav">GitHub ↗</a></nav>
+    <div class="footer-bottom"><span>© 2026 ViktorKav</span><span>Feito de código e curiosidade.</span><div><a href="https://viktorkav.com.br/privacy/">Privacidade</a><a href="https://viktorkav.com.br/terms/">Termos</a><a href="#inicio">Voltar ao início ↑</a></div></div>
+  </footer>
+  <script type="module" src="src/app.mjs"></script>
+</body>
+</html>

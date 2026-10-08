@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.browsers/
+.DS_Store
+*.log
+.env*

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#182d31"><title>Cartógrafos do Eclipse</title><link rel="stylesheet" href="./style.css"></head>
+<body>
+<div class="game-shell">
+<header class="masthead"><div class="brand"><span class="brand-mark" aria-hidden="true">◈</span><div><h1>Cartógrafos <i>do Eclipse</i></h1><p>Uma expedição tática</p></div></div><nav class="tools" aria-label="Opções"><button id="sound" class="icon-button" aria-label="Ativar áudio" title="Áudio opcional">♪ <span>Áudio off</span></button><button id="help" class="icon-button" aria-label="Abrir guia">? <span>Guia</span></button><button id="restart" class="icon-button" aria-label="Nova expedição">↻ <span>Nova run</span></button></nav></header>
+<main class="play-layout">
+<section class="battle-zone" aria-label="Campo de batalha">
+<div class="chapter"><div><p class="stage-label" id="stage-label">Passagem 1 de 4</p><h2 id="encounter-name">O cais esquecido</h2><p id="encounter-sub"></p></div><div class="turn-badge"><span id="phase-text">Sua equipe</span><strong id="round">Rodada 1</strong></div></div>
+<div class="battle-art" id="battle-art"><svg id="board" viewBox="0 0 900 660" role="group" aria-label="Terreno isométrico, selecione unidades e casas"></svg><div class="board-note" id="board-note">1. Selecione um aliado &nbsp; 2. Escolha a ação &nbsp; 3. Toque no alvo</div><div class="weather"><span class="weather-mark" aria-hidden="true">◌</span><span id="weather-text">Eclipse crescente</span></div><div class="legend"><span><b class="legend-move"></b>Movimento</span><span><b class="legend-target"></b>Alvo</span><span><b class="legend-risk"></b>Fratura</span></div></div>
+<div class="route-track" aria-label="Progresso da expedição" id="route-track"></div>
+</section>
+<aside class="command-zone" aria-label="Comandos da expedição">
+<div class="light-reserve"><div><span>Luz compartilhada</span><strong id="energy-count">3 / 5</strong></div><div id="energy-dots" class="energy-dots"></div><p id="relic-summary">Habilidades gastam 1 luz. Fragmentos no terreno restauram 1.</p></div>
+<div class="squad-title"><h3>Expedição</h3><span>2 ações por aliado</span></div><div id="squad" class="squad"></div>
+<section class="selected-details" id="selected-details" aria-label="Unidade selecionada"></section>
+<div class="action-bar" id="action-bar"></div>
+<div class="preview-panel" id="preview-panel" aria-live="polite"></div>
+<div class="confirm-row"><button id="cancel" class="text-button" disabled>Cancelar</button><button id="confirm" class="primary-button" disabled>Confirmar ação</button></div>
+<button id="end-turn" class="end-turn">Terminar turno <span>Espaço</span></button>
+<div class="intent-box"><div><h3>Intenções da sombra</h3><button id="toggle-intents" aria-pressed="false">Ver no campo</button></div><p class="intent-explainer">A sombra busca alvos vulneráveis. Intenções se ajustam ao seu movimento.</p><div id="intent-list"></div></div>
+</aside>
+</main>
+<footer class="field-log"><span>Diário de campo</span><p id="latest-log" aria-live="polite">A expedição chegou ao cais.</p><button id="log-toggle" aria-label="Abrir diário completo">Ver diário</button></footer>
+<div id="toast" role="status"></div>
+<div id="overlay" class="overlay" hidden></div>
+</div>
+<script type="module" src="./main.js"></script>
+</body></html>
