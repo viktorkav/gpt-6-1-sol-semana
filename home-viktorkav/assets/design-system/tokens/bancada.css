@@ -1,0 +1,50 @@
+/* Bancada visual. Terreno neutro e assinatura das cenas aprovadas do OBS.
+   Papéis web: não altera o terreno nem a escala de peças de vídeo. */
+:root {
+  --bancada-fundo:#232325;
+  --bancada-campo:#161618;
+  --bancada-superficie:#1e1e20;
+  --bancada-alta:#2b2b2d;
+  --bancada-traco:#3d3d42;
+  --bancada-traco-forte:#7c7c82;
+  --bancada-tinta:#f2f2f4;
+  --bancada-secundaria:#c3c4ca;
+  --bancada-legenda:#a5a6af;
+  --bancada-assinatura:#52a5ba;
+  --bancada-assinatura-texto:#81d3ea;
+  --bancada-assinatura-texto-forte:#a2e1ef;
+  --bancada-acao:#81d3ea;
+  --bancada-acao-forte:#a2e1ef;
+  --bancada-sobre-assinatura:#101619;
+  --bancada-assinatura-fraca:#20353c;
+  --bancada-profundidade:#9aa9d8;
+  --bancada-raio:4px;
+  --bancada-grade:rgba(195,196,202,.045);
+}
+[data-modo="claro"] {
+  --bancada-fundo:#ecece4;--bancada-campo:#f6f5f0;
+  --bancada-superficie:#fff;--bancada-alta:#e2e1d8;
+  --bancada-traco:#c5c6bf;--bancada-traco-forte:#777c78;
+  --bancada-tinta:#1a1a18;--bancada-secundaria:#535853;--bancada-legenda:#606660;
+  --bancada-assinatura-fraca:#d6e7eb;
+  --bancada-assinatura-texto-forte:#2b515c;
+  --bancada-assinatura-texto:#3a636e;--bancada-profundidade:#58648f;
+  --bancada-grade:rgba(26,26,24,.055);
+}
+.sitio {
+  --sitio-fundo:var(--bancada-fundo);--sitio-cromo:var(--bancada-campo);
+  --sitio-superficie:var(--bancada-superficie);--sitio-superficie-alta:var(--bancada-alta);
+  --sitio-rebaixo:var(--bancada-campo);
+  --sitio-traco:var(--bancada-traco);--sitio-traco-forte:var(--bancada-traco-forte);
+  --sitio-tinta-cheia:var(--bancada-tinta);--sitio-tinta-secundaria:var(--bancada-secundaria);
+  --sitio-tinta-fraca:var(--bancada-legenda);
+  --sitio-sinal:var(--bancada-assinatura-texto);--sitio-sinal-forte:var(--bancada-assinatura-texto-forte);
+  --sitio-sinal-fraco:var(--bancada-assinatura-fraca);--sobre-sinal:var(--bancada-sobre-assinatura);
+  --sitio-raio:var(--bancada-raio);--sitio-raio-janela:var(--bancada-raio);
+  --sitio-raio-fino:var(--bancada-raio);--sitio-raio-miudo:var(--bancada-raio);
+  --sitio-raio-capsula:var(--bancada-raio);
+  --sitio-manchete-peso:600;--sitio-secao-peso:550;--sitio-ficha-peso:550;
+  --sitio-terminal:var(--bancada-assinatura-texto);
+  --sitio-emissao:none;
+  --sitio-papel-realce:#3a636e;--sitio-papel-realce-forte:#2b515c;
+}

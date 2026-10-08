@@ -1,0 +1,513 @@
+/* GERADO por scripts/sync-design-system.sh — não editar.
+   Concatenação de tokens/*.css do pacote, na ordem que styles.css declara.
+   Override do consumidor vai em LandingPage/css/sitio-web.css. */
+
+/* ── tokens/fontes.css ───────────────────────────── */
+/* As três vozes. Fontes variáveis, auto-hospedadas, SIL OFL 1.1.
+   Origem: design-system/assets/fontes/ do repositório do canal. */
+@font-face{font-family:'Fraunces';src:url('assets/fontes/fraunces-vf.woff2') format('woff2');font-weight:100 900;font-style:normal;font-display:block}
+@font-face{font-family:'IBM Plex Sans';src:url('assets/fontes/ibm-plex-sans-vf.woff2') format('woff2');font-weight:100 700;font-style:normal;font-display:block}
+@font-face{font-family:'JetBrains Mono';src:url('assets/fontes/jetbrains-mono-vf.woff2') format('woff2');font-weight:100 800;font-style:normal;font-display:block}
+
+/* ── tokens/medida.css ───────────────────────────── */
+/* Medida — uma unidade, e tudo é múltiplo inteiro dela.
+   A unidade é 4px; o quadro da mesa é 40px. Espessura de traço não é área. */
+:root{
+--u:4px;
+--quadro:40px;
+--raio:12px;
+--raio-janela:10px; /* o pouso de uma janela do sistema operacional */
+--raio-miudo:6px;
+--raio-capsula:999px; /* @kind radius */
+--legado-raio:8px;
+--sombra:0 8px 32px rgba(0,0,0,0.32);
+--sobre-materia:#242424;
+
+/* molduras de peça */
+--peca-video-largura:1920px;--peca-video-altura:1080px;
+--peca-thumbnail-largura:1280px;--peca-thumbnail-altura:720px;
+
+/* medidas das peças compostas */
+--patrocinio-modulo:148px; /* o módulo do QR é a unidade: 116 do código + 16 de margem nos dois lados */
+--cta-barra-altura:96px;--cta-marca:96px;--cta-rotulo-largura:352px;
+--cta-pictograma:48px;--cta-margem:24px;--cta-vao:8px;
+--janela-peca-cromo-altura:48px;--janela-peca-cromo-margem:20px;
+--janela-peca-cromo-vao:12px;--janela-peca-sinal:20px;--janela-peca-campo-margem:32px;
+--lista-icone:96px;--lista-pictograma:48px;--lista-altura-faixa:96px;
+--lista-margem:24px;--lista-vao-faixa:40px;--lista-vao-pilha:24px;--lista-face:8px;
+
+/* apelidos semânticos do vão — todo respiro é múltiplo da unidade */
+--vao-fio:4px;--vao-curto:8px;--vao-medio:16px;--vao-respiro:24px;
+--vao-largo:40px;--vao-faixa:80px;
+}
+
+/* ── tokens/cor.css ───────────────────────────── */
+/* Cor — o terreno, as tintas, a matéria, os estados, a sintaxe, a casa.
+   Valores verbatim de variaveis.css (gerado de valores.json). */
+:root{
+/* a janela de sistema é escura sempre: não entra em bloco de modo */
+--janela-campo:#1b1b1b;
+--janela-cromo:#272727;
+--janela-tinta-cheia:#e9e9e9;
+--janela-tinta-secundaria:#bbbbbb;
+
+/* realce de sintaxe: cor do terminal do autor, entra como é */
+--sintaxe-texto:#ffffff;
+--sintaxe-eco:#686868;
+--sintaxe-comentario:#686868;
+--sintaxe-palavra-chave:#e17ee1;
+--sintaxe-identificador:#60fdff;
+--sintaxe-literal:#58e790;
+--sintaxe-numero:#a7abf2;
+--sintaxe-atencao:#ece100;
+--sintaxe-ok:#58e790;
+
+/* matéria: as doze cores de identidade, mesma faixa nos dois modos */
+--materia-7:#e9587f;--materia-37:#e46f4e;--materia-67:#c98f4f;--materia-97:#ae9c4e;
+--materia-127:#81a34d;--materia-157:#52a878;--materia-187:#54a89f;--materia-217:#52a5ba;
+--materia-247:#4e96d5;--materia-277:#6368e7;--materia-307:#9d5ad3;--materia-337:#cd56b2;
+--estado-materia-falhou:#f63347;--estado-materia-ressalva:#c0902a;--estado-materia-passou:#32a029;
+
+/* O SINAL — a cor da ação, em todo o sistema. Nasceu na prancha do sítio e
+   virou padrão: uma ação de sinal por vista, nunca duas. */
+--sinal:#f09400; /* @kind color */
+--sinal-forte:#ffab1f; /* @kind color */
+--sobre-sinal:#1b1206; /* @kind color */
+
+/* a assinatura: a cor da casa mora no LIGADO — núcleo + halo, um por peça */
+--casa:#52a5ba;
+--emissao-halo:0 0 4px 0 rgba(82,165,186,0.9),0 0 12px 0 rgba(82,165,186,0.45);
+--emissao-halo-svg:drop-shadow(0 0 4px rgba(82,165,186,0.9)) drop-shadow(0 0 12px rgba(82,165,186,0.45)); /* @kind other */
+}
+
+/* modo escuro é o padrão; o claro entra por atributo, e aninha. */
+:root,[data-modo="escuro"]{
+/* O terreno canônico é o do SÍTIO (decisão do ViktorKav, 13/08/2026): a peça
+   de vídeo passou a seguir a superfície web, e não o contrário. Os valores do
+   repositório original ficam preservados no bloco --legado-* abaixo.
+
+   O DEGRAU ENTRE OS QUATRO ANDARES É 0,065 EM OKLab (ViktorKav, 15/08/2026).
+   O terreno anterior subia de 0,026 por andar — abaixo do limiar de 0,040 que
+   o próprio `medir.mjs` usa para separar duas superfícies. Consequência
+   medida: uma peça construída em `--superficie` sobre `--mesa` media como
+   quadro VAZIO, e em monitor de gama diferente o fundo sumia por inteiro.
+   Não é ajuste de gosto: era um andar que não existia na medição.
+
+   A grade acompanhou (#161d25 → #1e2731) para não ficar afogada pela mesa que
+   subiu. O alvo é L efetivo 0,200 com a opacidade de .42 — acima da mesa em
+   0,049, e ABAIXO de `--superficie` (0,216) de propósito: a grade tem que
+   ganhar presença sem competir com o conteúdo que pousa em cima dela. */
+--rebaixo:#000205;--mesa:#070c10;--superficie:#151a21;--superficie-alta:#222a32;
+--poco:#01050a;--grade:#1e2731;
+--tinta-cheia:#e8e6e5;--tinta-secundaria:#8b8f94;--tinta-traco:#5b6169;
+/* o terreno de vídeo do repositório, para quem precisar reproduzir peça antiga */
+--legado-mesa:#343434;--legado-superficie:#424242;--legado-superficie-alta:#505050;
+--legado-rebaixo:#272727;--legado-poco:#141313;--legado-grade:#3e3e3e;
+--legado-tinta-cheia:#ebebeb;--legado-tinta-secundaria:#c7c7c7;--legado-tinta-traco:#686868;
+--lista-face-luz:#5a5959;--lista-face-sombra:#2c2c2c;
+--anel-texto-7:#edbfc7;--anel-texto-37:#eec2b5;--anel-texto-67:#eec399;--anel-texto-97:#dcc979;
+--anel-texto-127:#aed279;--anel-texto-157:#82d9a6;--anel-texto-187:#83d8ce;--anel-texto-217:#81d3ea;
+--anel-texto-247:#adceed;--anel-texto-277:#c1c7ed;--anel-texto-307:#d6bfed;--anel-texto-337:#efb7df;
+--casa-texto:#81d3ea;
+--estado-texto-falhou:#f6c5c3;--estado-texto-ressalva:#f7c76e;--estado-texto-passou:#64df59;
+--rack-servidores-topo:#8e959c;--rack-servidores-frente:#7a8187;--rack-servidores-base:#666d72;
+--rack-servidores-reentrancia:#6b7277;--rack-servidores-vinco:#53595f;--rack-servidores-marca:#4a5055;
+--servidor-2u-topo:#a4aab2;--servidor-2u-frente:#8f959c;--servidor-2u-base:#7b8187;
+--servidor-2u-reentrancia:#80868c;--servidor-2u-vinco:#676d73;--servidor-2u-marca:#5d6369;
+--xbox-series-x-topo:#f5f5f4;--xbox-series-x-frente:#dedede;--xbox-series-x-base:#c8c8c7;
+--xbox-series-x-reentrancia:#cecdcd;--xbox-series-x-vinco:#b2b1b1;--xbox-series-x-marca:#a7a7a7;
+--mac-studio-topo:#d1d0d0;--mac-studio-frente:#bbbaba;--mac-studio-base:#a5a4a5;
+--mac-studio-reentrancia:#aaaaaa;--mac-studio-vinco:#908f90;--mac-studio-marca:#858585;
+}
+
+[data-modo="claro"]{
+/* o claro é o PAPEL do sítio, pela mesma decisão */
+--rebaixo:#e2e1d8;--mesa:#ecece4;--superficie:#f6f5f0;--superficie-alta:#ffffff;
+--poco:#d8d7ce;--grade:#d8d7ce;
+--tinta-cheia:#1a1a18;--tinta-secundaria:#5c5c56;--tinta-traco:#a5a49c;
+--lista-face-luz:#ffffff;--lista-face-sombra:#d2d1d1;
+--anel-texto-7:#843d4e;--anel-texto-37:#834837;--anel-texto-67:#78593a;--anel-texto-97:#696039;
+--anel-texto-127:#516338;--anel-texto-157:#3c644c;--anel-texto-187:#3c6561;--anel-texto-217:#3a636e;
+--anel-texto-247:#385b7a;--anel-texto-277:#3d427f;--anel-texto-307:#5b3d76;--anel-texto-337:#743b66;
+--casa-texto:#3a636e;
+--estado-texto-falhou:#8f2d31;--estado-texto-ressalva:#755b28;--estado-texto-passou:#296124;
+--rack-servidores-topo:#8e959c;--rack-servidores-frente:#7a8187;--rack-servidores-base:#666d72;
+--rack-servidores-reentrancia:#6b7277;--rack-servidores-vinco:#53595f;--rack-servidores-marca:#4a5055;
+--servidor-2u-topo:#a4aab2;--servidor-2u-frente:#8f959c;--servidor-2u-base:#7b8187;
+--servidor-2u-reentrancia:#80868c;--servidor-2u-vinco:#676d73;--servidor-2u-marca:#5d6369;
+--xbox-series-x-topo:#30302f;--xbox-series-x-frente:#1f1f1f;--xbox-series-x-base:#0e0e0d;
+--xbox-series-x-reentrancia:#131312;--xbox-series-x-vinco:#000000;--xbox-series-x-marca:#4b4b4a;
+--mac-studio-topo:#4d4d4c;--mac-studio-frente:#3a3a3a;--mac-studio-base:#292828;
+--mac-studio-reentrancia:#2d2d2c;--mac-studio-vinco:#191818;--mac-studio-marca:#6a6969;
+}
+
+/* ── tokens/tipografia.css ───────────────────────────── */
+/* Tipografia — três vozes, papéis fechados. Cada papel fixa voz, corpo,
+   entrelinha e peso de uma vez; a entrelinha é múltipla da unidade de 4px. */
+:root{
+--voz-editorial:'Fraunces',serif; /* @kind font */
+--voz-funcional:'IBM Plex Sans',sans-serif; /* @kind font */
+--voz-sistema:'JetBrains Mono',monospace; /* @kind font */
+
+--rotulo-corpo:22px;
+--rotulo-entrelinha:32px;
+--rotulo-peso:400; /* @kind other */
+--rotulo-espacamento:0.08em; /* @kind other */
+--rotulo-caixa:uppercase; /* @kind other */
+--metadado-corpo:26px;
+--metadado-entrelinha:40px;
+--metadado-peso:400; /* @kind other */
+--corpo-corpo:30px;
+--corpo-entrelinha:40px;
+--corpo-peso:400; /* @kind other */
+--deck-corpo:24px;
+--deck-entrelinha:32px;
+--deck-peso:500; /* @kind other */
+--item-corpo:28px;
+--item-entrelinha:32px;
+--item-peso:600; /* @kind other */
+--deck-peca-corpo:20px;
+--deck-peca-entrelinha:24px;
+--deck-peca-peso:500; /* @kind other */
+--acao-corpo:40px;
+--acao-entrelinha:48px;
+--acao-peso:600; /* @kind other */
+--terminal-corpo:40px;
+--terminal-entrelinha:48px;
+--terminal-peso:500; /* @kind other */
+--terminal-eco-corpo:20px;
+--terminal-eco-entrelinha:32px;
+--terminal-eco-peso:400; /* @kind other */
+--titulo-corpo:48px;
+--titulo-entrelinha:56px;
+--titulo-peso:640; /* @kind other */
+--manchete-1280-corpo:104px;
+--manchete-1280-entrelinha:112px;
+--manchete-1280-peso:700; /* @kind other */
+}
+
+/* ── tokens/movimento.css ───────────────────────────── */
+/* Movimento — o quadro é a unidade, a linha do tempo é sempre 60fps.
+   Os passos são declarados em quadros; o milissegundo é derivado. */
+:root{
+--t-toque:100ms; /* @kind other */ /* 6 quadros */
+--t-entrada:200ms; /* @kind other */ /* 12 quadros */
+--t-pintura:400ms; /* @kind other */ /* 24 quadros */
+--t-varredura:800ms; /* @kind other */ /* 48 quadros */
+--t-saida:500ms; /* @kind other */ /* 30 quadros */
+--e-entrada:cubic-bezier(0.2,0,0,1); /* @kind other */
+--e-tracado:linear; /* @kind other */
+--e-saida:cubic-bezier(0.4,0,1,1); /* @kind other */
+
+/* a entrada por planta: o orçamento fechado (24+12+24 = 60 quadros) */
+--entrada-planta:400ms; /* @kind other */
+--entrada-superficie:200ms; /* @kind other */
+--entrada-conteudo:400ms; /* @kind other */
+--entrada-traco:200ms; /* @kind other */
+--entrada-apagamento:100ms; /* @kind other */
+--entrada-sombra:200ms; /* @kind other */
+--entrada-grade:80px;
+--planta-cabeca:72px;
+--fps:60; /* @kind other */
+}
+
+/* ── tokens/graus.css ───────────────────────────── */
+/* Os graus e os estados — a cor se pede pela classe, nunca pelo hex.
+   A classe carrega matéria (o que pinta áreas) e o par de texto daquela cor. */
+.grau-7{--materia:var(--materia-7);--anel-texto:var(--anel-texto-7);--materia-luz:#fe7b9a;--materia-sombra:#ca3b66}
+.grau-37{--materia:var(--materia-37);--anel-texto:var(--anel-texto-37);--materia-luz:#fe8d6c;--materia-sombra:#c75434}
+.grau-67{--materia:var(--materia-67);--anel-texto:var(--anel-texto-67);--materia-luz:#e5aa6a;--materia-sombra:#ad7533}
+.grau-97{--materia:var(--materia-97);--anel-texto:var(--anel-texto-97);--materia-luz:#c9b769;--materia-sombra:#938132}
+.grau-127{--materia:var(--materia-127);--anel-texto:var(--anel-texto-127);--materia-luz:#9bbe68;--materia-sombra:#688832}
+.grau-157{--materia:var(--materia-157);--anel-texto:var(--anel-texto-157);--materia-luz:#6ec492;--materia-sombra:#368e5f}
+.grau-187{--materia:var(--materia-187);--anel-texto:var(--anel-texto-187);--materia-luz:#70c3ba;--materia-sombra:#378d85}
+.grau-217{--materia:var(--materia-217);--anel-texto:var(--anel-texto-217);--materia-luz:#6ec0d6;--materia-sombra:#358a9f}
+.grau-247{--materia:var(--materia-247);--anel-texto:var(--anel-texto-247);--materia-luz:#69b2f2;--materia-sombra:#327bb9}
+.grau-277{--materia:var(--materia-277);--anel-texto:var(--anel-texto-277);--materia-luz:#7b84ff;--materia-sombra:#4d4dca}
+.grau-307{--materia:var(--materia-307);--anel-texto:var(--anel-texto-307);--materia-luz:#b875f0;--materia-sombra:#833fb7}
+.grau-337{--materia:var(--materia-337);--anel-texto:var(--anel-texto-337);--materia-luz:#eb72ce;--materia-sombra:#b03a97}
+
+/* estado fala mais alto que identidade: vem depois, e vence no empate */
+.estado-falhou{--materia:var(--estado-materia-falhou);--anel-texto:var(--estado-texto-falhou);--materia-luz:#ff6e6f;--materia-sombra:#d30430}
+.estado-ressalva{--materia:var(--estado-materia-ressalva);--anel-texto:var(--estado-texto-ressalva);--materia-luz:#dcab4a;--materia-sombra:#a47601}
+.estado-passou{--materia:var(--estado-materia-passou);--anel-texto:var(--estado-texto-passou);--materia-luz:#51bc47;--materia-sombra:#0c8400}
+
+/* a moldura da peça: a medida sai daqui */
+.peca-video{width:var(--peca-video-largura);height:var(--peca-video-altura)}
+.peca-thumbnail{width:var(--peca-thumbnail-largura);height:var(--peca-thumbnail-altura)}
+
+/* os objetos: a cor é do produto */
+[data-objeto="servidor-2u"]{--obj-topo:var(--servidor-2u-topo);--obj-frente:var(--servidor-2u-frente);--obj-base:var(--servidor-2u-base);--obj-reentrancia:var(--servidor-2u-reentrancia);--obj-vinco:var(--servidor-2u-vinco);--obj-marca:var(--servidor-2u-marca)}
+[data-objeto="rack-servidores"]{--obj-topo:var(--rack-servidores-topo);--obj-frente:var(--rack-servidores-frente);--obj-base:var(--rack-servidores-base);--obj-reentrancia:var(--rack-servidores-reentrancia);--obj-vinco:var(--rack-servidores-vinco);--obj-marca:var(--rack-servidores-marca)}
+[data-objeto="xbox-series-x"]{--obj-topo:var(--xbox-series-x-topo);--obj-frente:var(--xbox-series-x-frente);--obj-base:var(--xbox-series-x-base);--obj-reentrancia:var(--xbox-series-x-reentrancia);--obj-vinco:var(--xbox-series-x-vinco);--obj-marca:var(--xbox-series-x-marca)}
+[data-objeto="mac-studio"]{--obj-topo:var(--mac-studio-topo);--obj-frente:var(--mac-studio-frente);--obj-base:var(--mac-studio-base);--obj-reentrancia:var(--mac-studio-reentrancia);--obj-vinco:var(--mac-studio-vinco);--obj-marca:var(--mac-studio-marca)}
+[data-objeto="xbox-series-x"][data-invertido]{--obj-topo:#f5f5f4;--obj-frente:#dedede;--obj-base:#c8c8c7;--obj-reentrancia:#cecdcd;--obj-vinco:#b2b1b1;--obj-marca:#a7a7a7}
+[data-objeto="mac-studio"][data-invertido]{--obj-topo:#4d4d4c;--obj-frente:#3a3a3a;--obj-base:#292828;--obj-reentrancia:#2d2d2c;--obj-vinco:#191818;--obj-marca:#6a6969}
+
+/* ── tokens/sitio.css ───────────────────────────── */
+/* O sítio — a superfície web do canal.
+   Terreno próprio, MEDIDO em website-1.png (910px de largura, reamostrado
+   para uma prancha de 1440). O sítio é mais escuro que a mesa de vídeo e tem
+   um sinal próprio: o âmbar da ação. Onde o vídeo diz "mesa cinza + casa
+   ciano", o sítio diz "poço quase preto + âmbar". Os dois convivem: o sítio é
+   um TERRENO a mais, não uma segunda paleta — a matéria (grau-*), as três
+   vozes, o raio, a unidade de 4px e o vocabulário do ligado são os mesmos. */
+:root{
+/* terreno */
+--sitio-fundo:#04080c;
+--sitio-cromo:#02060a;
+--sitio-superficie:#080d13;
+--sitio-superficie-alta:#0d141b;
+--sitio-rebaixo:#010407;
+--sitio-traco:#161d25;
+--sitio-traco-forte:#232c36;
+
+/* tintas */
+--sitio-tinta-cheia:#e8e6e5;
+--sitio-tinta-secundaria:#8b8f94;
+--sitio-tinta-fraca:#5b6169;
+
+/* o sinal: o âmbar da ação. Um por vista — é o "ligado" do sítio. */
+--sitio-sinal:#f09400;
+--sitio-sinal-forte:#ffab1f;
+--sitio-sinal-fraco:#3a2606;
+--sobre-sinal:#1b1206;
+--sitio-emissao:0 0 0 1px rgba(240,148,0,0.28),0 8px 28px -6px rgba(240,148,0,0.35); /* @kind shadow */
+
+/* O RELEVO. A janela precisa ler um andar acima do terreno, e o degrau é
+   NATURAL, não entalhado: três sombras de raios crescentes (contato, apoio,
+   ambiente) e um fio de luz de 1px no bordo de cima — a face iluminada, a
+   mesma ideia das faces de extrusão da lista, medida em vez de desenhada.
+   Nada de bisel duro, nada de sombra interna escura. */
+--sitio-relevo:0 1px 2px rgba(0,0,0,.45),0 6px 14px -6px rgba(0,0,0,.55),0 18px 44px -20px rgba(0,0,0,.7); /* @kind shadow */
+--sitio-relevo-alto:0 2px 4px rgba(0,0,0,.5),0 12px 26px -8px rgba(0,0,0,.6),0 34px 74px -28px rgba(0,0,0,.78); /* @kind shadow */
+--sitio-relevo-baixo:0 1px 2px rgba(0,0,0,.4),0 4px 10px -6px rgba(0,0,0,.5); /* @kind shadow */
+--sitio-luz-de-bordo:inset 0 1px 0 rgba(255,255,255,.07); /* @kind shadow */
+--sitio-luz-de-bordo-forte:inset 0 1px 0 rgba(255,255,255,.11); /* @kind shadow */
+
+/* a faixa clara do rodapé: papel, não modo claro do sistema */
+--sitio-papel:#ecece4;
+--sitio-papel-superficie:#f6f5f0;
+--sitio-papel-traco:#d8d7ce;
+--sitio-papel-tinta:#1a1a18;
+--sitio-papel-tinta-secundaria:#5c5c56;
+/* O sinal do sítio (--sitio-sinal) NÃO passa contraste sobre as duas superfícies claras:
+   1,98:1 sobre --sitio-papel e 2,15:1 sobre --sitio-papel-superficie, contra piso de 4,5:1.
+   Este é o par para usar lá — mesmo matiz, luminosidade menor, medido com margem (4,96:1 e
+   5,40:1). Link, número de seção e destaque sobre papel pedem estes, nunca o sinal.
+   ⚠️ Não há regra automática de propósito: quem monta a superfície escolhe onde aplicar. */
+--sitio-papel-realce:#8f5800;
+--sitio-papel-realce-forte:#7a4b00;
+
+/* o verde do prompt: a linha de terminal que assina o herói */
+--sitio-terminal:#58a048;
+
+/* realces medidos nas fichas e nos chips — os irmãos claros do anel */
+--sitio-realce-ambar:#fcb848;
+--sitio-realce-azul:#50a0f0;
+--sitio-realce-verde:#6cb45c;
+--sitio-realce-roxo:#dc78f8;
+--sitio-realce-coral:#fc8060;
+
+/* papéis de texto do sítio (prancha de 1440)
+   Cada clamp FECHA EXATO no valor da prancha a 1440px e trava ali para cima —
+   64/1440=4.444vw · 40/1440=2.778vw · 26/1440=1.806vw · 18/1440=1.250vw · 16/1440=1.111vw.
+   Em pixel fixo, a manchete dava dezesseis caracteres por linha a 390px. Provado em produção
+   no viktorkav.com.br desde 08/2026 (ACHADOS-DO-SITIO §3). */
+--sitio-manchete-corpo:clamp(34px,4.444vw,64px);
+--sitio-manchete-entrelinha:clamp(38px,4.722vw,68px);
+--sitio-manchete-peso:400; /* @kind other */
+--sitio-secao-corpo:clamp(26px,2.778vw,40px);
+--sitio-secao-entrelinha:clamp(32px,3.333vw,48px);
+--sitio-secao-peso:400; /* @kind other */
+--sitio-ficha-corpo:clamp(20px,1.806vw,26px);
+--sitio-ficha-entrelinha:clamp(26px,2.222vw,32px);
+--sitio-ficha-peso:400; /* @kind other */
+--sitio-corpo-corpo:clamp(15px,1.111vw,16px);
+--sitio-corpo-entrelinha:clamp(23px,1.667vw,24px);
+--sitio-corpo-peso:400; /* @kind other */
+--sitio-deck-corpo:clamp(16px,1.250vw,18px);
+--sitio-deck-entrelinha:clamp(24px,1.944vw,28px);
+--sitio-deck-peso:400; /* @kind other */
+--sitio-rotulo-corpo:12px;
+--sitio-rotulo-entrelinha:16px;
+--sitio-rotulo-espacamento:0.14em; /* @kind other */
+--sitio-acao-corpo:15px;
+--sitio-acao-entrelinha:20px;
+--sitio-acao-peso:600; /* @kind other */
+--sitio-mono-corpo:13px;--sitio-mono-entrelinha:20px;
+
+/* geometria do sítio */
+--sitio-raio:12px;
+--sitio-raio-janela:10px;
+--sitio-raio-fino:8px;
+--sitio-raio-miudo:6px;
+--sitio-raio-capsula:999px;
+--sitio-largura:1440px;
+--sitio-miolo:1240px;
+--sitio-cromo-altura:64px;
+}
+
+/* ── tokens/peca.css ───────────────────────────── */
+/* Peça — o degrau de relevo das peças de vídeo (13/08/2026).
+   A peça passou a falar a língua do sítio: terreno fundo, superfície com
+   luz, canto macOS e volume por difusão. Os números são os do sítio
+   MULTIPLICADOS PELA ESCALA DA PEÇA — 1920 contra 1440 é 1,33×, e um raio de
+   12px numa moldura de 1920 lê como quina viva. */
+:root{
+/* cantos: o raio da peça é grande porque a moldura é grande */
+--raio-peca:20px; /* @kind radius */
+--raio-peca-janela:16px; /* @kind radius */
+--raio-peca-miudo:12px; /* @kind radius */
+--raio-peca-barra:999px; /* @kind radius */
+
+/* relevo: as mesmas três sombras do sítio, com os raios da escala da peça */
+--relevo-peca-baixo:0 2px 4px rgba(0,0,0,.42),0 10px 22px -12px rgba(0,0,0,.55); /* @kind shadow */
+--relevo-peca:0 2px 6px rgba(0,0,0,.45),0 18px 40px -14px rgba(0,0,0,.6),0 56px 110px -48px rgba(0,0,0,.75); /* @kind shadow */
+--relevo-peca-alto:0 4px 10px rgba(0,0,0,.5),0 30px 64px -18px rgba(0,0,0,.66),0 90px 170px -70px rgba(0,0,0,.85); /* @kind shadow */
+--luz-de-bordo-peca:inset 0 2px 0 rgba(255,255,255,.06); /* @kind shadow */
+--luz-de-bordo-peca-forte:inset 0 2px 0 rgba(255,255,255,.1); /* @kind shadow */
+
+/* A VOZ DE DISPLAY DA PEÇA — 13/08/2026, decisão do ViktorKav.
+   A serifa SAIU. O repositório usava Fraunces na manchete; a prancha do sítio
+   não tem serifa em lugar nenhum, e o sítio é o padrão. A manchete da peça
+   passa a ser a voz funcional apertada: peso 600, entrelinha curta e tracking
+   negativo — o que dá densidade a um título sem a ajuda do contraste de haste.
+   Fraunces continua no acervo como voz editorial de peça antiga. */
+--display-peso:600; /* @kind other */
+--display-tracking:-0.028em; /* @kind other */
+--display-entrelinha:1.04; /* @kind other */
+--display-tracking-titulo:-0.02em; /* @kind other */
+
+/* A margem do rótulo cresce na peça. Os 24px do repositório eram calibrados
+   para largura FIXA, onde a folga vinha do container sobrando; abraçando o
+   conteúdo, a mesma margem aperta o texto contra a borda. 40px = um quadro. */
+--cta-margem-peca:40px; /* @kind spacing */
+
+/* O TRAÇO DA GRADE EM PEÇA DE VÍDEO É 2px, e não 1px como no sítio.
+   Motivo de cadeia de entrega, não de gosto (ViktorKav, 13/08/2026): a linha
+   passa por render do DaVinci Resolve e depois pelo encoder do YouTube. Duas
+   coisas comem linha fina ali — a subamostragem de croma 4:2:0, que joga fora
+   três quartos da informação de cor, e a quantização do H.264, que trata
+   detalhe de baixo contraste em área grande como ruído e alisa. Linha de 1px
+   com pouco contraste é exatamente o pior caso das duas: sobrevive no navegador
+   e desaparece no vídeo publicado.
+
+   2px sobrevive porque ocupa mais de um bloco de amostragem. Na tela parece
+   grosso demais; no arquivo final é o que se vê. Quem projeta para vídeo
+   projeta para depois do encoder.
+
+   3px DESDE 15/08/2026 (ViktorKav), pela mesma cadeia e um degrau adiante: a
+   linha sobrevivia ao encoder mas continuava tênue no monitor de gama alta.
+   Foi junto com o terreno de degrau 0,065 e a grade clareada em tokens/cor.css
+   — as três alavancas da mesma queixa, e elas se calibram juntas. */
+--grade-traco-peca:3px; /* @kind spacing */
+
+/* O SLIDE PADRÃO DO REMOTION — três faixas que segmentam o quadro 16:9.
+   As alturas caem na unidade de 40px (o quadro), e a soma é exata:
+   240 + 720 + 120 = 1080. A faixa do meio ficando em 720 não é coincidência
+   escolhida: é a altura de 720p, então o conteúdo do slide é sempre uma
+   moldura 16:9 conhecida dentro do quadro maior — o que dá para conferir
+   enquadramento sem régua. */
+--slide-faixa-manchete:240px; /* @kind spacing */
+--slide-faixa-conteudo:720px; /* @kind spacing */
+--slide-faixa-rodape:120px; /* @kind spacing */
+--slide-respiro:80px; /* @kind spacing */
+
+/* MESMO MOTIVO, MESMA CORREÇÃO, para o bloco falado: 24px foram medidos para
+   largura FIXA. Abraçando o conteúdo, o item mais largo do grupo fica com só
+   24px depois do texto — e como todos os outros esticam até ele, é justamente
+   o mais largo que define a folga que se vê. 40px = um quadro, igual à CTA. */
+--lista-margem-peca:40px; /* @kind spacing */
+
+/* ── o volume da barra de dado ─────────────────────────────────────────
+   Medido para barra de 16px na escala de vídeo: sombra curta, porque numa
+   altura dessas qualquer difusão longa vira mancha em volta do dado. */
+--poco-barra:inset 0 1px 2px rgba(0,0,0,.55),inset 0 -1px 0 rgba(255,255,255,.045); /* @kind shadow */
+/* O VÉU É UM CILINDRO, não um degradê de cima para baixo: quatro paradas, com a
+   virada de luz para sombra em 58% e não no meio. A aresta de cima recebe o
+   brilho especular, o terço superior fica claro, e a base escurece mais rápido
+   do que clareia — é assim que um tubo se lê. Meio a meio faria uma rampa, e
+   rampa é papel dobrado, não volume. */
+--veu-volume-barra:linear-gradient(180deg,rgba(255,255,255,.40) 0,rgba(255,255,255,.20) 30%,rgba(255,255,255,.04) 58%,rgba(0,0,0,.16) 80%,rgba(0,0,0,.30) 100%); /* @kind other */
+--relevo-barra:inset 0 1px 0 rgba(255,255,255,.42),inset 0 -1px 0 rgba(0,0,0,.34),0 1px 2px rgba(0,0,0,.5); /* @kind shadow */
+
+/* o ciclo do zoom de fundo: um ciclo é UMA DOBRA da grade. 40s é lento o
+   bastante para não ser percebido como movimento dentro de um corte. */
+--t-quadro-adentro:40s; /* @kind other */
+/* os níveis acima do quadro entram mais fracos que ele: o fino é o que se lê,
+   e a troca do grosso no reinício do ciclo precisa ser a menos visível. */
+--grade-media:color-mix(in srgb,var(--sitio-traco) 62%,transparent); /* @kind color */
+--grade-grossa:color-mix(in srgb,var(--sitio-traco) 34%,transparent); /* @kind color */
+
+/* ── separação em alpha ──────────────────────────────────────────────────
+   A faixa de patrocínio é renderizada COM CANAL ALPHA e composta sobre
+   material que o sistema não controla: cena de câmera, gameplay, captura de
+   tela, qualquer coisa. O relevo normal não resolve — ele é calibrado para
+   pousar sobre a mesa, que é escura e conhecida.
+
+   A separação é feita nos DOIS sentidos ao mesmo tempo, porque o fundo pode
+   ser claro ou escuro e a peça não sabe qual:
+   · o halo escuro difuso separa de material CLARO (a peça é clara);
+   · o contorno de luz de 1px separa de material ESCURO (a borda não funde).
+   Um só dos dois falha em metade dos casos. */
+--separacao-alpha:0 2px 6px rgba(0,0,0,.30),0 14px 36px rgba(0,0,0,.40),0 44px 104px rgba(0,0,0,.34); /* @kind shadow */
+--contorno-alpha:inset 0 0 0 1px rgba(255,255,255,.16); /* @kind shadow */
+
+/* a superfície deixa de ser chapa: um véu de luz de cima para baixo */
+--veu-superficie:linear-gradient(180deg,rgba(255,255,255,.05) 0,rgba(255,255,255,0) 46%); /* @kind other */
+--veu-materia:linear-gradient(180deg,rgba(255,255,255,.22) 0,rgba(0,0,0,.14) 100%); /* @kind other */
+}
+
+
+/* ── tokens/bancada.css ───────────────────────────── */
+/* Bancada visual. Terreno neutro e assinatura das cenas aprovadas do OBS.
+   Papéis web: não altera o terreno nem a escala de peças de vídeo. */
+:root {
+  --bancada-fundo:#232325;
+  --bancada-campo:#161618;
+  --bancada-superficie:#1e1e20;
+  --bancada-alta:#2b2b2d;
+  --bancada-traco:#3d3d42;
+  --bancada-traco-forte:#7c7c82;
+  --bancada-tinta:#f2f2f4;
+  --bancada-secundaria:#c3c4ca;
+  --bancada-legenda:#a5a6af;
+  --bancada-assinatura:#52a5ba;
+  --bancada-assinatura-texto:#81d3ea;
+  --bancada-assinatura-texto-forte:#a2e1ef;
+  --bancada-acao:#81d3ea;
+  --bancada-acao-forte:#a2e1ef;
+  --bancada-sobre-assinatura:#101619;
+  --bancada-assinatura-fraca:#20353c;
+  --bancada-profundidade:#9aa9d8;
+  --bancada-raio:4px;
+  --bancada-grade:rgba(195,196,202,.045);
+}
+[data-modo="claro"] {
+  --bancada-fundo:#ecece4;--bancada-campo:#f6f5f0;
+  --bancada-superficie:#fff;--bancada-alta:#e2e1d8;
+  --bancada-traco:#c5c6bf;--bancada-traco-forte:#777c78;
+  --bancada-tinta:#1a1a18;--bancada-secundaria:#535853;--bancada-legenda:#606660;
+  --bancada-assinatura-fraca:#d6e7eb;
+  --bancada-assinatura-texto-forte:#2b515c;
+  --bancada-assinatura-texto:#3a636e;--bancada-profundidade:#58648f;
+  --bancada-grade:rgba(26,26,24,.055);
+}
+.sitio {
+  --sitio-fundo:var(--bancada-fundo);--sitio-cromo:var(--bancada-campo);
+  --sitio-superficie:var(--bancada-superficie);--sitio-superficie-alta:var(--bancada-alta);
+  --sitio-rebaixo:var(--bancada-campo);
+  --sitio-traco:var(--bancada-traco);--sitio-traco-forte:var(--bancada-traco-forte);
+  --sitio-tinta-cheia:var(--bancada-tinta);--sitio-tinta-secundaria:var(--bancada-secundaria);
+  --sitio-tinta-fraca:var(--bancada-legenda);
+  --sitio-sinal:var(--bancada-assinatura-texto);--sitio-sinal-forte:var(--bancada-assinatura-texto-forte);
+  --sitio-sinal-fraco:var(--bancada-assinatura-fraca);--sobre-sinal:var(--bancada-sobre-assinatura);
+  --sitio-raio:var(--bancada-raio);--sitio-raio-janela:var(--bancada-raio);
+  --sitio-raio-fino:var(--bancada-raio);--sitio-raio-miudo:var(--bancada-raio);
+  --sitio-raio-capsula:var(--bancada-raio);
+  --sitio-manchete-peso:600;--sitio-secao-peso:550;--sitio-ficha-peso:550;
+  --sitio-terminal:var(--bancada-assinatura-texto);
+  --sitio-emissao:none;
+  --sitio-papel-realce:#3a636e;--sitio-papel-realce-forte:#2b515c;
+}

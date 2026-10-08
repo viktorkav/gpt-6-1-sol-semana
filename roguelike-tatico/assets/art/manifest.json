@@ -1,0 +1,565 @@
+{
+  "schema_version": 1,
+  "revision": 1,
+  "status": "ready",
+  "model_receipt": {
+    "provider": "Fish Audio MCP",
+    "model_id": "gpt-image-2.5-sunburst",
+    "receipt": "./DIREITOS-E-ORIGENS.md",
+    "source_alpha": false,
+    "received_generated_images": 8,
+    "fourth_background": "not generated;payment_required;composition reuses fundo-escadaria"
+  },
+  "sprites": {
+    "sentinel": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/sentinel-idle.webp",
+          "width": 386,
+          "height": 512,
+          "anchor": [
+            207.12141057934508,
+            482.6599496221662
+          ],
+          "source_cell_index": 0,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_sw": {
+          "src": "./assets/art/units/sentinel-idle_sw.webp",
+          "width": 395,
+          "height": 511,
+          "anchor": [
+            159.91939546599497,
+            482.6599496221662
+          ],
+          "source_cell_index": 1,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_ne": {
+          "src": "./assets/art/units/sentinel-idle_ne.webp",
+          "width": 343,
+          "height": 511,
+          "anchor": [
+            162.49874055415617,
+            491.0428211586902
+          ],
+          "source_cell_index": 2,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "attack": {
+          "src": "./assets/art/units/sentinel-attack.webp",
+          "width": 439,
+          "height": 466,
+          "anchor": [
+            195.06297229219143,
+            453.9647355163728
+          ],
+          "source_cell_index": 3,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "skill": {
+          "src": "./assets/art/units/sentinel-skill.webp",
+          "width": 494,
+          "height": 464,
+          "anchor": [
+            172.49370277078086,
+            450.7405541561713
+          ],
+          "source_cell_index": 4,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "hurt": {
+          "src": "./assets/art/units/sentinel-hurt.webp",
+          "width": 291,
+          "height": 460,
+          "anchor": [
+            140.89672544080605,
+            452.99748110831234
+          ],
+          "source_cell_index": 5,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        }
+      },
+      "scale": 0.18105567893401014,
+      "display_height": 92.0,
+      "portrait": "./assets/art/portraits/sentinel.webp",
+      "source": "hero-iara",
+      "physical_scale_shared_across_poses": true
+    },
+    "ranger": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/ranger-idle.webp",
+          "width": 309,
+          "height": 507,
+          "anchor": [
+            131.25232704402515,
+            492.35723270440246
+          ],
+          "source_cell_index": 0,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_sw": {
+          "src": "./assets/art/units/ranger-idle_sw.webp",
+          "width": 308,
+          "height": 507,
+          "anchor": [
+            131.70314465408805,
+            492.6792452830188
+          ],
+          "source_cell_index": 1,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_ne": {
+          "src": "./assets/art/units/ranger-idle_ne.webp",
+          "width": 307,
+          "height": 503,
+          "anchor": [
+            123.9748427672956,
+            487.5270440251572
+          ],
+          "source_cell_index": 2,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "attack": {
+          "src": "./assets/art/units/ranger-attack.webp",
+          "width": 369,
+          "height": 512,
+          "anchor": [
+            169.7006289308176,
+            500.7295597484277
+          ],
+          "source_cell_index": 3,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "hurt": {
+          "src": "./assets/art/units/ranger-hurt.webp",
+          "width": 265,
+          "height": 450,
+          "anchor": [
+            137.82138364779874,
+            433.42893081761
+          ],
+          "source_cell_index": 5,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "skill": {
+          "src": "./assets/art/units/ranger-attack.webp",
+          "width": 369,
+          "height": 512,
+          "anchor": [
+            169.7006289308176,
+            500.7295597484277
+          ],
+          "source_cell_index": 3,
+          "ground_anchor_method": "mean of two optically inspected sole contacts",
+          "reuse_reason": "Generated cell5 has an extra arm/hand; excluded after direct inspection. Skill uses valid attack pose plus native horizon effect."
+        }
+      },
+      "scale": 0.18290853072983354,
+      "display_height": 92.0,
+      "portrait": "./assets/art/portraits/ranger.webp",
+      "source": "hero-noa",
+      "physical_scale_shared_across_poses": true
+    },
+    "healer": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/healer-idle.webp",
+          "width": 350,
+          "height": 512,
+          "anchor": [
+            202.74935400516796,
+            486.86304909560727
+          ],
+          "source_cell_index": 0,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_sw": {
+          "src": "./assets/art/units/healer-idle_sw.webp",
+          "width": 300,
+          "height": 505,
+          "anchor": [
+            133.2919896640827,
+            484.2170542635659
+          ],
+          "source_cell_index": 1,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "idle_ne": {
+          "src": "./assets/art/units/healer-idle_ne.webp",
+          "width": 346,
+          "height": 495,
+          "anchor": [
+            135.73953488372098,
+            478.9250645994832
+          ],
+          "source_cell_index": 2,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "attack": {
+          "src": "./assets/art/units/healer-attack.webp",
+          "width": 470,
+          "height": 446,
+          "anchor": [
+            175.29715762273904,
+            423.359173126615
+          ],
+          "source_cell_index": 3,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "skill": {
+          "src": "./assets/art/units/healer-skill.webp",
+          "width": 352,
+          "height": 473,
+          "anchor": [
+            139.2454780361757,
+            457.75710594315245
+          ],
+          "source_cell_index": 4,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        },
+        "hurt": {
+          "src": "./assets/art/units/healer-hurt.webp",
+          "width": 304,
+          "height": 464,
+          "anchor": [
+            148.70490956072348,
+            450.81136950904397
+          ],
+          "source_cell_index": 5,
+          "ground_anchor_method": "mean of two optically inspected sole contacts"
+        }
+      },
+      "scale": 0.185028076171875,
+      "display_height": 94.0,
+      "portrait": "./assets/art/portraits/healer.webp",
+      "source": "hero-sol",
+      "physical_scale_shared_across_poses": true
+    },
+    "walker": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/walker-idle.webp",
+          "width": 464,
+          "height": 477,
+          "anchor": [
+            186.00749063670412,
+            473.6479400749064
+          ],
+          "source_cell_index": 0
+        },
+        "attack": {
+          "src": "./assets/art/units/walker-attack.webp",
+          "width": 512,
+          "height": 479,
+          "anchor": [
+            190.80149812734084,
+            475.5655430711611
+          ],
+          "source_cell_index": 1
+        },
+        "hurt": {
+          "src": "./assets/art/units/walker-hurt.webp",
+          "width": 473,
+          "height": 425,
+          "anchor": [
+            228.1947565543071,
+            420.9138576779026
+          ],
+          "source_cell_index": 2
+        }
+      },
+      "scale": 0.16110899390243902,
+      "display_height": 76.0,
+      "source": "inimigos",
+      "physical_scale_shared_across_poses": true
+    },
+    "spitter": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/spitter-idle.webp",
+          "width": 340,
+          "height": 469,
+          "anchor": [
+            209,
+            500
+          ],
+          "source_cell_index": 3
+        },
+        "attack": {
+          "src": "./assets/art/units/spitter-attack.webp",
+          "width": 496,
+          "height": 442,
+          "anchor": [
+            266.0,
+            472.13333333333344
+          ],
+          "source_cell_index": 4
+        },
+        "hurt": {
+          "src": "./assets/art/units/spitter-hurt.webp",
+          "width": 288,
+          "height": 417,
+          "anchor": [
+            157.0,
+            447.13333333333344
+          ],
+          "source_cell_index": 5
+        }
+      },
+      "scale": 0.17278617710583152,
+      "display_height": 80.0,
+      "source": "inimigos",
+      "physical_scale_shared_across_poses": true
+    },
+    "boss": {
+      "frames": {
+        "idle": {
+          "src": "./assets/art/units/boss-idle.webp",
+          "width": 438,
+          "height": 620,
+          "anchor": [
+            219.0561224489796,
+            616.8367346938776
+          ],
+          "source_cell_index": 6
+        },
+        "attack": {
+          "src": "./assets/art/units/boss-attack.webp",
+          "width": 495,
+          "height": 617,
+          "anchor": [
+            223.01020408163268,
+            613.6734693877552
+          ],
+          "source_cell_index": 7
+        },
+        "hurt": {
+          "src": "./assets/art/units/boss-hurt.webp",
+          "width": 417,
+          "height": 597,
+          "anchor": [
+            200.0765306122449,
+            593.9030612244899
+          ],
+          "source_cell_index": 8
+        }
+      },
+      "scale": 0.22429720540675013,
+      "display_height": 138.0,
+      "source": "inimigos",
+      "physical_scale_shared_across_poses": true
+    }
+  },
+  "tiles": {
+    "0-stone": {
+      "src": "./assets/art/terrain/asset-1.webp",
+      "width": 384,
+      "height": 264,
+      "box": [
+        -48.43636363636364,
+        -25.46875,
+        96.87272727272727,
+        71.5625
+      ],
+      "native_depth": 20.625,
+      "optical_equator_source_y": 160,
+      "source_cell_index": 0
+    },
+    "1-stone": {
+      "src": "./assets/art/terrain/asset-2.webp",
+      "width": 384,
+      "height": 262,
+      "box": [
+        -48.43308270676692,
+        -25.46583850931677,
+        96.86616541353384,
+        70.96273291925465
+      ],
+      "native_depth": 20.03105590062112,
+      "optical_equator_source_y": 161,
+      "source_cell_index": 1
+    },
+    "2-stone": {
+      "src": "./assets/art/terrain/asset-3.webp",
+      "width": 384,
+      "height": 264,
+      "box": [
+        -48.43504531722054,
+        -25.46583850931677,
+        96.8700906344411,
+        71.27329192546583
+      ],
+      "native_depth": 20.341614906832298,
+      "optical_equator_source_y": 161,
+      "source_cell_index": 2
+    },
+    "3-stone": {
+      "src": "./assets/art/terrain/asset-4.webp",
+      "width": 384,
+      "height": 267,
+      "box": [
+        -48.43308270676692,
+        -25.45731707317073,
+        96.86616541353384,
+        71.03658536585365
+      ],
+      "native_depth": 20.121951219512194,
+      "optical_equator_source_y": 164,
+      "source_cell_index": 3
+    },
+    "0-moss": {
+      "src": "./assets/art/terrain/asset-5.webp",
+      "width": 384,
+      "height": 268,
+      "box": [
+        -48.43768996960486,
+        -25.460122699386503,
+        96.87537993920972,
+        71.0122699386503
+      ],
+      "native_depth": 20.0920245398773,
+      "optical_equator_source_y": 163,
+      "source_cell_index": 4
+    },
+    "1-moss": {
+      "src": "./assets/art/terrain/asset-6.webp",
+      "width": 384,
+      "height": 265,
+      "box": [
+        -48.43438914027149,
+        -25.46583850931677,
+        96.868778280543,
+        71.73913043478261
+      ],
+      "native_depth": 20.80745341614907,
+      "optical_equator_source_y": 161,
+      "source_cell_index": 5
+    },
+    "2-moss": {
+      "src": "./assets/art/terrain/asset-7.webp",
+      "width": 384,
+      "height": 266,
+      "box": [
+        -48.43636363636364,
+        -25.46583850931677,
+        96.87272727272727,
+        71.73913043478261
+      ],
+      "native_depth": 20.80745341614907,
+      "optical_equator_source_y": 161,
+      "source_cell_index": 6
+    },
+    "3-moss": {
+      "src": "./assets/art/terrain/asset-8.webp",
+      "width": 384,
+      "height": 268,
+      "box": [
+        -48.433734939759034,
+        -25.454545454545453,
+        96.86746987951807,
+        70.9090909090909
+      ],
+      "native_depth": 20.0,
+      "optical_equator_source_y": 165,
+      "source_cell_index": 7
+    }
+  },
+  "props": {
+    "arena-0": {
+      "src": "./assets/art/props/asset-9.webp",
+      "width": 357,
+      "height": 512,
+      "anchor": [
+        178.46857142857144,
+        509.07428571428574
+      ],
+      "reference_height": 507.6114285714286
+    },
+    "arena-1": {
+      "src": "./assets/art/props/asset-10.webp",
+      "width": 400,
+      "height": 512,
+      "anchor": [
+        199.91654247391952,
+        508.9478390461997
+      ],
+      "reference_height": 507.4217585692995
+    },
+    "arena-2": {
+      "src": "./assets/art/props/asset-11.webp",
+      "width": 356,
+      "height": 512,
+      "anchor": [
+        178.11732605729878,
+        509.20600272851294
+      ],
+      "reference_height": 507.80900409276944
+    },
+    "arena-3": {
+      "src": "./assets/art/props/asset-12.webp",
+      "width": 466,
+      "height": 512,
+      "anchor": [
+        233.13485113835378,
+        508.41330998248685
+      ],
+      "reference_height": 506.6199649737303
+    },
+    "fragment": {
+      "src": "./assets/art/props/asset-13.webp",
+      "width": 296,
+      "height": 453,
+      "anchor": [
+        148.0,
+        449
+      ],
+      "reference_height": 447
+    }
+  },
+  "rewards": {
+    "calm": {
+      "src": "./assets/art/props/asset-14.webp",
+      "width": 512,
+      "height": 410,
+      "anchor": [
+        256.0,
+        405.69904761904763
+      ],
+      "reference_height": 403.74857142857144
+    },
+    "edge": {
+      "src": "./assets/art/props/asset-15.webp",
+      "width": 512,
+      "height": 417,
+      "anchor": [
+        256.0,
+        413.9760683760684
+      ],
+      "reference_height": 412.22564102564104
+    },
+    "ward": {
+      "src": "./assets/art/props/asset-16.webp",
+      "width": 512,
+      "height": 395,
+      "anchor": [
+        256.0,
+        391.62382445141066
+      ],
+      "reference_height": 390.01880877742946
+    }
+  },
+  "backgrounds": [
+    "./assets/art/fundo-cais.webp",
+    "./assets/art/fundo-jardim.webp",
+    "./assets/art/fundo-escadaria.webp",
+    "./assets/art/fundo-escadaria.webp"
+  ],
+  "background_treatments": [
+    null,
+    null,
+    null,
+    "eclipse-heart;reuse generated stair plate with composited basalt props and original vector eclipse atmosphere"
+  ]
+}
